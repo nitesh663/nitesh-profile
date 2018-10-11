@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+/*****************************
+  mat card content goes below
+******************************/
+
+.grid-container {
+    margin: 20px;
+  }
+  
+  .dashboard-card {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+  }
+  
+  .more-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+  
+  .dashboard-card-content {
+    text-align: left;
+  }
+  
+  button mat-icon {
+    color: #7c48c9 !important;
+  }
+  
+  mat-card-title .material-icons{
+    color: #51456d;
+  }
+  
+  button mat-menu-item a{
+    text-decoration: none !important;
+  }

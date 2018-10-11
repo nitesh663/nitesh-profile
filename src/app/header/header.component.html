@@ -1,0 +1,57 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="!(isHandset$ | async)">
+    <mat-toolbar color="primary">Nitesh Kumar Sharma</mat-toolbar>
+    
+    <img src="https://i.postimg.cc/0bhMjx45/nit.jpg"><br/>
+    <div class="social-icon">
+      <a href="https://www.linkedin.com/in/nitesh-sharma-7194195b/" target="_blank"><i class="fa fa-linkedin fa-lg" matTooltip="linkedin" matTooltipClass="custom-tooltip-black" aria-hidden="true"></i></a>
+      <a href="https://github.com/nitesh663/DAILY/" target="_blank"><i class="fa fa-github fa-lg" matTooltip="github" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/niteshdsuperboy" target="_blank"><i class="fa fa-facebook fa-lg" matTooltip="facebook" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/nitesh663" target="_blank"><i class="fa fa-twitter fa-lg" matTooltip="twitter" aria-hidden="true"></i></a>
+    </div>
+    <!--<p style="color: #bfab43; text-align: center">Nitesh Kumar Sharma</p>-->
+    <mat-nav-list>
+      <a mat-list-item routerLink="/"><mat-icon>border_color</mat-icon>About</a>
+      <a mat-list-item routerLink="/exp"><mat-icon>work</mat-icon>Experience</a>
+      <a mat-list-item routerLink="/edu"><mat-icon>school</mat-icon>Education</a>
+      <a mat-list-item><mat-icon>restaurant_menu</mat-icon>Skills</a>
+      <a mat-list-item><mat-icon>style</mat-icon>Interest</a>
+      <a mat-list-item><mat-icon>beenhere</mat-icon>Certification</a>
+    </mat-nav-list>
+    <footer style="padding-top: 6em; text-align:center; color: #e1f5ee;">
+        <h5 style="font-weight: 4">© 2018 Angular Developer</h5>
+    </footer>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span style="cursor: pointer" routerLink="/"><mat-icon>home</mat-icon></span>
+      <span class="spacer"></span>
+      <a routerLink="/">About</a>
+      <a routerLink="/exp">Experience</a>
+      <a >Education</a>
+      <a >Skills</a>
+      <a >Interest</a>
+      <a >Certification</a>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <mat-card>
+        <router-outlet>
+          
+        </router-outlet>
+    </mat-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>

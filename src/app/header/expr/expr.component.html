@@ -1,0 +1,23 @@
+<mat-card-header>
+    <mat-card-title>
+        <h2 style="color:#51456d"><mat-icon>perm_identity</mat-icon> {{ matHeader }}</h2>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+        <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+        <button mat-menu-item>
+            <mat-icon>get_app</mat-icon>Download CV
+        </button>
+        <button mat-menu-item>
+            <mat-icon>mail</mat-icon><a [href]="mailText">Mail Me</a>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>call</mat-icon>Call Me
+        </button>
+        </mat-menu>
+    </mat-card-title>
+</mat-card-header>
+<mat-card-content class="dashboard-card-content">
+    <p>Hi I am Exper</p>
+</mat-card-content>
+    
