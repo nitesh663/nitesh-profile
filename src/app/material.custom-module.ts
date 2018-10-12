@@ -8,7 +8,7 @@ import {
     MatGridListModule, 
     MatCardModule, 
     MatMenuModule,
-    MatTooltipModule
+    MatTooltipModule,
 } from '@angular/material';
 
 import { NgModule } from '@angular/core';

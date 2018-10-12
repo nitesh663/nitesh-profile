@@ -11,6 +11,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { AboutComponent } from './header/about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ExprComponent } from './header/expr/expr.component';
+import { MglTimelineModule } from 'angular-mgl-timeline';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ExprComponent } from './header/expr/expr.component';
     MaterialModule,
     LayoutModule,
     AppRoutingModule,
+    MglTimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -77,3 +77,7 @@ mat-sidenav i .custom-tooltip-black{
 .social-icon{
   margin: 20px;
 }
+
+mat-card{
+  min-height: 655px !important;
+}

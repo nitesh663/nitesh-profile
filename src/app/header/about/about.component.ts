@@ -9,7 +9,6 @@ import { Breakpoints, BreakpointState, BreakpointObserver } from '@angular/cdk/l
 })
 export class AboutComponent {
   /** Based on the screen size, switch from standard to one column per row */
- 
   matHeader = 'Profile Summary';
   mailText:string = "";
 
