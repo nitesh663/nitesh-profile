@@ -4,12 +4,3 @@
   top: 5px;
   right: 10px;
 }
-
-mgl-timeline-entry-dot{
-  background: #51456d !important;
-}
-
-mgl-timeline-entry-dot p{
-  text-align: center;
-  color: #fff;
-}

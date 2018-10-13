@@ -12,13 +12,15 @@ import { AboutComponent } from './header/about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ExprComponent } from './header/expr/expr.component';
 import { MglTimelineModule } from 'angular-mgl-timeline';
+import { ProfSummaryComponent } from './header/about/prof-summary/prof-summary.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AboutComponent,
-    ExprComponent
+    ExprComponent,
+    ProfSummaryComponent
   ],
   imports: [
     BrowserModule,
