@@ -11,6 +11,7 @@ mgl-timeline-entry-dot{
 
   mgl-timeline-entry-content{
       font-weight: 500;
+      text-align: justify;
   }
 
   .icons8-angularjs {
