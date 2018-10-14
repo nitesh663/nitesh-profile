@@ -1,0 +1,22 @@
+<mat-card-header [ngStyle]="{'text-align': 'center'}">
+    <mat-card-title>
+        <h2 style="color:#51456d"><mat-icon>perm_identity</mat-icon> {{ matHeader }}</h2>
+    </mat-card-title>
+</mat-card-header>
+<mat-card-content class="dashboard-card-content">
+    <!--<h2 class="example-h2">Angular</h2>-->
+    <mat-grid-list cols="4" rowHeight="90px">
+        <mat-grid-tile
+            *ngFor="let tile of tiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows"
+            [style.background]="tile.color">
+            <h5 style="color: #fff;font-weight: 200">{{tile.value}}%</h5>
+            <mat-slider class="custom-slider"  [(ngModel)]="tile.value"></mat-slider>
+            <mat-grid-tile-header>
+              {{tile.text}}
+            </mat-grid-tile-header>
+        </mat-grid-tile>
+      </mat-grid-list>
+    
+</mat-card-content>

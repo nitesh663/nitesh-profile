@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ExprComponent } from './header/expr/expr.component';
 import { MglTimelineModule } from 'angular-mgl-timeline';
 import { ProfSummaryComponent } from './header/about/prof-summary/prof-summary.component';
+import { SkillSetComponent } from './header/skill-set/skill-set.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProfSummaryComponent } from './header/about/prof-summary/prof-summary.c
     HeaderComponent,
     AboutComponent,
     ExprComponent,
-    ProfSummaryComponent
+    ProfSummaryComponent,
+    SkillSetComponent
   ],
   imports: [
     BrowserModule,

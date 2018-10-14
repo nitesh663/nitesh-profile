@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointState, BreakpointObserver } from '@angular/cdk/layout';
+import { fadeInAnimation } from '../../_animations/index';
 
 @Component({
   selector: 'app-header/about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./about.component.css'],
+  animations: [fadeInAnimation],
+  host: { '[@fadeInAnimation]': '' }
 })
 export class AboutComponent {
   /** Based on the screen size, switch from standard to one column per row */

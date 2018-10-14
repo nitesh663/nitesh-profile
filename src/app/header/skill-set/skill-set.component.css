@@ -1,0 +1,13 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.custom-slider{
+     margin-top: 8%;
+}
+
+mat-grid-tile {
+    background: rgb(81, 69, 109);
+}
+
+.mat-slider-horizontal{
+    min-width: 80%;
+}

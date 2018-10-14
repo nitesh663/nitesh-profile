@@ -79,5 +79,5 @@ mat-sidenav i .custom-tooltip-black{
 }
 
 mat-card{
-  min-height: 655px !important;
+  box-shadow: none !important;
 }
