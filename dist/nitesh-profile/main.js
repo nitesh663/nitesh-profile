@@ -568,7 +568,7 @@ module.exports = "* {\r\n    box-sizing: border-box;\r\n}\r\n\r\n/* The actual t
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"timeline\" *ngFor=\"let exper of experiences\">\n    <div class=\"container\" [ngClass]=\"exper.alignItem\">\n      <div class=\"content\">\n        <h2 style=\"font-weight: 400\">{{ exper.desig }}</h2>\n        <p><b>{{ exper.yrs }}</b></p>\n        <p style=\"color: purple\"><b>Company:</b> Software AG</p>\n        <p>{{ exper.prof_desc }}</p>\n      </div>\n    </div>\n  </div>\n  "
+module.exports = "<div class=\"timeline\" *ngFor=\"let exper of experiences\">\n    <div class=\"container\" [ngClass]=\"exper.alignItem\">\n      <div class=\"content\">\n        <h2 style=\"font-weight: 400\">{{ exper.desig }}</h2>\n        <p><b>{{ exper.yrs }}</b></p>\n        <p style=\"color: purple\"><b>Company:</b> Software AG</p>\n        <p style=\"text-align: justify; width: 100%\">{{ exper.prof_desc }}</p>\n      </div>\n    </div>\n  </div>\n  "
 
 /***/ }),
 
@@ -598,7 +598,7 @@ var TimelineComponent = /** @class */ (function () {
         this.experiences = [
             { alignItem: 'left', desig: 'Angular Developer', yrs: 'Aug 2017 - Oct 2018', prof_desc: 'Developing API for WebMethods Integration Platform so that users can dragAndDrop different services.It will keep tracking of tree like structure folder within packages.Used Angular 2-6, Html5, CSS3, Javascript.' },
             { alignItem: 'right', desig: 'Spring Boot Developer', yrs: 'Oct 2017 - Oct 2018', prof_desc: 'Designing, developing, and managing complex rest full web services using Spring Boot, Core Java and MySQL.Worked on WebMethods Integration Platform to provide access to rest full web services.' },
-            { alignItem: 'left', desig: 'Testing', yrs: 'Apr 2017 - Jul 2018', prof_desc: 'Creating jenkins jobs for product CNl, written test set for WebMethods Service Development in Junits.Testing products in environment like Linux(susse,redhat)/Mac/Windows.Correcting existing QFT test suite.Excellence in worked with agile methodology.' },
+            { alignItem: 'left', desig: 'Testing', yrs: 'Apr 2017 - Jul 2018', prof_desc: 'Creating jenkins jobs for product CNl, written test set for WebMethods Service Development in Junits. Testing products in environment like Linux(susse,redhat)/Mac/Windows. Correcting existing QFT test suite. Excellence in worked with agile methodology.' },
         ];
     }
     TimelineComponent.prototype.ngOnInit = function () {
