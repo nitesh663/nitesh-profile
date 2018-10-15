@@ -255,12 +255,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var angular_mgl_timeline__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! angular-mgl-timeline */ "./node_modules/angular-mgl-timeline/fesm5/angular-mgl-timeline.js");
 /* harmony import */ var _header_about_prof_summary_prof_summary_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./header/about/prof-summary/prof-summary.component */ "./src/app/header/about/prof-summary/prof-summary.component.ts");
 /* harmony import */ var _header_skill_set_skill_set_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./header/skill-set/skill-set.component */ "./src/app/header/skill-set/skill-set.component.ts");
+/* harmony import */ var _header_expr_timeline_timeline_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./header/expr/timeline/timeline.component */ "./src/app/header/expr/timeline/timeline.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -287,7 +289,8 @@ var AppModule = /** @class */ (function () {
                 _header_about_about_component__WEBPACK_IMPORTED_MODULE_9__["AboutComponent"],
                 _header_expr_expr_component__WEBPACK_IMPORTED_MODULE_11__["ExprComponent"],
                 _header_about_prof_summary_prof_summary_component__WEBPACK_IMPORTED_MODULE_13__["ProfSummaryComponent"],
-                _header_skill_set_skill_set_component__WEBPACK_IMPORTED_MODULE_14__["SkillSetComponent"]
+                _header_skill_set_skill_set_component__WEBPACK_IMPORTED_MODULE_14__["SkillSetComponent"],
+                _header_expr_timeline_timeline_component__WEBPACK_IMPORTED_MODULE_15__["TimelineComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -297,7 +300,7 @@ var AppModule = /** @class */ (function () {
                 _material_custom_module__WEBPACK_IMPORTED_MODULE_6__["MaterialModule"],
                 _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__["LayoutModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_10__["AppRoutingModule"],
-                angular_mgl_timeline__WEBPACK_IMPORTED_MODULE_12__["MglTimelineModule"]
+                angular_mgl_timeline__WEBPACK_IMPORTED_MODULE_12__["MglTimelineModule"],
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
@@ -328,7 +331,7 @@ module.exports = "\n.more-button {\n  position: absolute;\n  top: 5px;\n  right:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card-header>\r\n    <mat-card-title>\r\n        <h2 style=\"color:#51456d\"><mat-icon>perm_identity</mat-icon> {{ matHeader }}</h2>\r\n        <button mat-icon-button class=\"more-button\" [matMenuTriggerFor]=\"menu\" aria-label=\"Toggle menu\">\r\n        <mat-icon>more_vert</mat-icon>\r\n        </button>\r\n        <mat-menu #menu=\"matMenu\" xPosition=\"before\">\r\n        <button mat-menu-item>\r\n            <mat-icon>get_app</mat-icon>Download CV\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>mail</mat-icon><a [href]=\"mailText\">Mail Me</a>\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>call</mat-icon>Call Me\r\n        </button>\r\n        </mat-menu>\r\n    </mat-card-title>\r\n</mat-card-header>\r\n<mat-card-content class=\"dashboard-card-content\">\r\n    <app-prof-summary></app-prof-summary>\r\n</mat-card-content>"
+module.exports = "<mat-card-header>\r\n    <mat-card-title>\r\n        <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>perm_identity</mat-icon> {{ matHeader }}</h1>\r\n        <button mat-icon-button class=\"more-button\" [matMenuTriggerFor]=\"menu\" aria-label=\"Toggle menu\">\r\n        <mat-icon>more_vert</mat-icon>\r\n        </button>\r\n        <mat-menu #menu=\"matMenu\" xPosition=\"before\">\r\n        <button mat-menu-item>\r\n            <mat-icon>get_app</mat-icon>Download CV\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>mail</mat-icon><a [href]=\"mailText\">Mail Me</a>\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>call</mat-icon>Call Me\r\n        </button>\r\n        </mat-menu>\r\n    </mat-card-title>\r\n</mat-card-header>\r\n<mat-card-content class=\"dashboard-card-content\">\r\n    <app-prof-summary></app-prof-summary>\r\n</mat-card-content>"
 
 /***/ }),
 
@@ -494,7 +497,7 @@ module.exports = "\n.more-button {\n  position: absolute;\n  top: 5px;\n  right:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card-header>\n    <mat-card-title>\n        <h2 style=\"color:#51456d\"><mat-icon>perm_identity</mat-icon> {{ matHeader }}</h2>\n        <button mat-icon-button class=\"more-button\" [matMenuTriggerFor]=\"menu\" aria-label=\"Toggle menu\">\n        <mat-icon>more_vert</mat-icon>\n        </button>\n        <mat-menu #menu=\"matMenu\" xPosition=\"before\">\n        <button mat-menu-item>\n            <mat-icon>get_app</mat-icon>Download CV\n        </button>\n        <button mat-menu-item>\n            <mat-icon>mail</mat-icon><a [href]=\"mailText\">Mail Me</a>\n        </button>\n        <button mat-menu-item>\n            <mat-icon>call</mat-icon>Call Me\n        </button>\n        </mat-menu>\n    </mat-card-title>\n</mat-card-header>\n<mat-card-content class=\"dashboard-card-content\">\n    <p>Hi I am Exper</p>\n</mat-card-content>\n    "
+module.exports = "<mat-card-header>\n    <mat-card-title>\n        <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>work</mat-icon> {{ matHeader }}</h1>\n        <button mat-icon-button class=\"more-button\" [matMenuTriggerFor]=\"menu\" aria-label=\"Toggle menu\">\n        <mat-icon>more_vert</mat-icon>\n        </button>\n        <mat-menu #menu=\"matMenu\" xPosition=\"before\">\n        <button mat-menu-item>\n            <mat-icon>get_app</mat-icon>Download CV\n        </button>\n        <button mat-menu-item>\n            <mat-icon>mail</mat-icon><a [href]=\"mailText\">Mail Me</a>\n        </button>\n        <button mat-menu-item>\n            <mat-icon>call</mat-icon>Call Me\n        </button>\n        </mat-menu>\n    </mat-card-title>\n</mat-card-header>\n<mat-card-content class=\"dashboard-card-content\">\n    <app-timeline></app-timeline>\n</mat-card-content>\n    "
 
 /***/ }),
 
@@ -541,6 +544,74 @@ var ExprComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_1__["BreakpointObserver"]])
     ], ExprComponent);
     return ExprComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/header/expr/timeline/timeline.component.css":
+/*!*************************************************************!*\
+  !*** ./src/app/header/expr/timeline/timeline.component.css ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "* {\r\n    box-sizing: border-box;\r\n}\r\n\r\n/* The actual timeline (the vertical ruler) */\r\n\r\n.timeline {\r\n    position: relative;\r\n    max-width: 1200px;\r\n    margin: 0 auto;\r\n}\r\n\r\n/* The actual timeline (the vertical ruler) */\r\n\r\n.timeline::after {\r\n    content: '';\r\n    position: absolute;\r\n    width: 6px;\r\n    background-color: #51456d;\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 50%;\r\n    margin-left: -3px;\r\n}\r\n\r\n/* Container around content */\r\n\r\n.container {\r\n    padding: 10px 40px;\r\n    position: relative;\r\n    background-color: inherit;\r\n    width: 50%;\r\n}\r\n\r\n/* The circles on the timeline */\r\n\r\n.container::after {\r\n    content: '';\r\n    position: absolute;\r\n    width: 25px;\r\n    height: 25px;\r\n    right: -17px;\r\n    background-color: white;\r\n    border: 4px solid #FF9F55;\r\n    top: 15px;\r\n    border-radius: 50%;\r\n    z-index: 1;\r\n}\r\n\r\n/* Place the container to the left */\r\n\r\n.left {\r\n    left: 0;\r\n}\r\n\r\n/* Place the container to the right */\r\n\r\n.right {\r\n    left: 50%;\r\n}\r\n\r\n/* Add arrows to the left container (pointing right) */\r\n\r\n.left::before {\r\n    content: \" \";\r\n    height: 0;\r\n    position: absolute;\r\n    top: 22px;\r\n    width: 0;\r\n    z-index: 1;\r\n    right: 30px;\r\n    border: medium solid white;\r\n    border-width: 10px 0 10px 10px;\r\n    border-color: transparent transparent transparent #51456d;\r\n}\r\n\r\n/* Add arrows to the right container (pointing left) */\r\n\r\n.right::before {\r\n    content: \" \";\r\n    height: 0;\r\n    position: absolute;\r\n    top: 22px;\r\n    width: 0;\r\n    z-index: 1;\r\n    left: 30px;\r\n    border: medium solid white;\r\n    border-width: 10px 10px 10px 0;\r\n    border-color: transparent #51456d transparent transparent;\r\n}\r\n\r\n/* Fix the circle for containers on the right side */\r\n\r\n.right::after {\r\n    left: -16px;\r\n}\r\n\r\n/* The actual content */\r\n\r\n.content {\r\n    padding: 20px 30px;\r\n    background-color: white;\r\n    position: relative;\r\n    \r\n    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);\r\n}\r\n\r\n/* Media queries - Responsive timeline on screens less than 600px wide */\r\n\r\n@media screen and (max-width: 600px) {\r\n  /* Place the timelime to the left */\r\n  .timeline::after {\r\n    left: 31px;\r\n  }\r\n  \r\n  /* Full-width containers */\r\n  .container {\r\n    width: 100%;\r\n    padding-left: 70px;\r\n    padding-right: 25px;\r\n  }\r\n  \r\n  /* Make sure that all arrows are pointing leftwards */\r\n  .container::before {\r\n    left: 60px;\r\n    border: medium solid white;\r\n    border-width: 10px 10px 10px 0;\r\n    border-color: transparent #51456d transparent transparent;\r\n  }\r\n\r\n  /* Make sure all circles are at the same spot */\r\n  .left::after, .right::after {\r\n    left: 15px;\r\n  }\r\n  \r\n  /* Make all right containers behave like the left ones */\r\n  .right {\r\n    left: 0%;\r\n  }\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/header/expr/timeline/timeline.component.html":
+/*!**************************************************************!*\
+  !*** ./src/app/header/expr/timeline/timeline.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"timeline\" *ngFor=\"let exper of experiences\">\n    <div class=\"container\" [ngClass]=\"exper.alignItem\">\n      <div class=\"content\">\n        <h2 style=\"font-weight: 400\">{{ exper.desig }}</h2>\n        <p><b>{{ exper.yrs }}</b></p>\n        <p style=\"color: purple\"><b>Company:</b> Software AG</p>\n        <p>{{ exper.prof_desc }}</p>\n      </div>\n    </div>\n  </div>\n  "
+
+/***/ }),
+
+/***/ "./src/app/header/expr/timeline/timeline.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/header/expr/timeline/timeline.component.ts ***!
+  \************************************************************/
+/*! exports provided: TimelineComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TimelineComponent", function() { return TimelineComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TimelineComponent = /** @class */ (function () {
+    function TimelineComponent() {
+        this.experiences = [
+            { alignItem: 'left', desig: 'Angular Developer', yrs: 'Aug 2017 - Oct 2018', prof_desc: 'Developing API for WebMethods Integration Platform so that users can dragAndDrop different services.It will keep tracking of tree like structure folder within packages.Used Angular 2-6, Html5, CSS3, Javascript.' },
+            { alignItem: 'right', desig: 'Spring Boot Developer', yrs: 'Oct 2017 - Oct 2018', prof_desc: 'Designing, developing, and managing complex rest full web services using Spring Boot, Core Java and MySQL.Worked on WebMethods Integration Platform to provide access to rest full web services.' },
+            { alignItem: 'left', desig: 'Testing', yrs: 'Apr 2017 - Jul 2018', prof_desc: 'Creating jenkins jobs for product CNl, written test set for WebMethods Service Development in Junits.Testing products in environment like Linux(susse,redhat)/Mac/Windows.Correcting existing QFT test suite.Excellence in worked with agile methodology.' },
+        ];
+    }
+    TimelineComponent.prototype.ngOnInit = function () {
+    };
+    TimelineComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-timeline',
+            template: __webpack_require__(/*! ./timeline.component.html */ "./src/app/header/expr/timeline/timeline.component.html"),
+            styles: [__webpack_require__(/*! ./timeline.component.css */ "./src/app/header/expr/timeline/timeline.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], TimelineComponent);
+    return TimelineComponent;
 }());
 
 
@@ -634,7 +705,7 @@ module.exports = ".mat-elevation-z0{box-shadow:0 0 0 0 rgba(0,0,0,.2),0 0 0 0 rg
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card-header [ngStyle]=\"{'text-align': 'center'}\">\n    <mat-card-title>\n        <h2 style=\"color:#51456d\"><mat-icon>perm_identity</mat-icon> {{ matHeader }}</h2>\n    </mat-card-title>\n</mat-card-header>\n<mat-card-content class=\"dashboard-card-content\">\n    <!--<h2 class=\"example-h2\">Angular</h2>-->\n    <mat-grid-list cols=\"4\" rowHeight=\"90px\">\n        <mat-grid-tile\n            *ngFor=\"let tile of tiles\"\n            [colspan]=\"tile.cols\"\n            [rowspan]=\"tile.rows\"\n            [style.background]=\"tile.color\">\n            <h5 style=\"color: #fff;font-weight: 200\">{{tile.value}}%</h5>\n            <mat-slider class=\"custom-slider\"  [(ngModel)]=\"tile.value\"></mat-slider>\n            <mat-grid-tile-header>\n              {{tile.text}}\n            </mat-grid-tile-header>\n        </mat-grid-tile>\n      </mat-grid-list>\n    \n</mat-card-content>"
+module.exports = "<mat-card-header [ngStyle]=\"{'text-align': 'center'}\">\n    <mat-card-title>\n        <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>restaurant_menu</mat-icon> {{ matHeader }}</h1>\n    </mat-card-title>\n</mat-card-header>\n<mat-card-content class=\"dashboard-card-content\">\n    <!--<h2 class=\"example-h2\">Angular</h2>-->\n    <mat-grid-list cols=\"4\" rowHeight=\"90px\">\n        <mat-grid-tile\n            *ngFor=\"let tile of tiles\"\n            [colspan]=\"tile.cols\"\n            [rowspan]=\"tile.rows\"\n            [style.background]=\"tile.color\">\n            <h5 style=\"color: #fff;font-weight: 200\">{{tile.value}}%</h5>\n            <mat-slider class=\"custom-slider\" [thumbLabel]=\"true\" [(ngModel)]=\"tile.value\"></mat-slider>\n            <mat-grid-tile-header>\n              {{tile.text}}\n            </mat-grid-tile-header>\n        </mat-grid-tile>\n      </mat-grid-list>\n</mat-card-content>"
 
 /***/ }),
 

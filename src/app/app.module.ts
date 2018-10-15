@@ -14,6 +14,7 @@ import { ExprComponent } from './header/expr/expr.component';
 import { MglTimelineModule } from 'angular-mgl-timeline';
 import { ProfSummaryComponent } from './header/about/prof-summary/prof-summary.component';
 import { SkillSetComponent } from './header/skill-set/skill-set.component';
+import { TimelineComponent } from './header/expr/timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SkillSetComponent } from './header/skill-set/skill-set.component';
     AboutComponent,
     ExprComponent,
     ProfSummaryComponent,
-    SkillSetComponent
+    SkillSetComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,7 @@ import { SkillSetComponent } from './header/skill-set/skill-set.component';
     MaterialModule,
     LayoutModule,
     AppRoutingModule,
-    MglTimelineModule
+    MglTimelineModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

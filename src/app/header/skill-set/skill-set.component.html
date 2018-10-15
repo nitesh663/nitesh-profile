@@ -1,6 +1,6 @@
 <mat-card-header [ngStyle]="{'text-align': 'center'}">
     <mat-card-title>
-        <h2 style="color:#51456d"><mat-icon>perm_identity</mat-icon> {{ matHeader }}</h2>
+        <h1 style="color:#51456d;font-weight: 350"><mat-icon>restaurant_menu</mat-icon> {{ matHeader }}</h1>
     </mat-card-title>
 </mat-card-header>
 <mat-card-content class="dashboard-card-content">
@@ -12,11 +12,10 @@
             [rowspan]="tile.rows"
             [style.background]="tile.color">
             <h5 style="color: #fff;font-weight: 200">{{tile.value}}%</h5>
-            <mat-slider class="custom-slider"  [(ngModel)]="tile.value"></mat-slider>
+            <mat-slider class="custom-slider" [thumbLabel]="true" [(ngModel)]="tile.value"></mat-slider>
             <mat-grid-tile-header>
               {{tile.text}}
             </mat-grid-tile-header>
         </mat-grid-tile>
       </mat-grid-list>
-    
 </mat-card-content>
