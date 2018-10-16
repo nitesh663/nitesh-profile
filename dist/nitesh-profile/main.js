@@ -140,6 +140,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header_about_about_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header/about/about.component */ "./src/app/header/about/about.component.ts");
 /* harmony import */ var _header_skill_set_skill_set_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./header/skill-set/skill-set.component */ "./src/app/header/skill-set/skill-set.component.ts");
 /* harmony import */ var _header_expr_expr_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./header/expr/expr.component */ "./src/app/header/expr/expr.component.ts");
+/* harmony import */ var _header_educat_educat_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./header/educat/educat.component */ "./src/app/header/educat/educat.component.ts");
+/* harmony import */ var _header_interest_interest_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./header/interest/interest.component */ "./src/app/header/interest/interest.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -151,11 +153,15 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
 var routes = [
     { path: '', redirectTo: '/about', pathMatch: 'full' },
     { path: 'about', component: _header_about_about_component__WEBPACK_IMPORTED_MODULE_2__["AboutComponent"] },
     { path: 'skill-set', component: _header_skill_set_skill_set_component__WEBPACK_IMPORTED_MODULE_3__["SkillSetComponent"] },
-    { path: 'exp', component: _header_expr_expr_component__WEBPACK_IMPORTED_MODULE_4__["ExprComponent"] }
+    { path: 'exp', component: _header_expr_expr_component__WEBPACK_IMPORTED_MODULE_4__["ExprComponent"] },
+    { path: 'edu', component: _header_educat_educat_component__WEBPACK_IMPORTED_MODULE_5__["EducatComponent"] },
+    { path: 'intr', component: _header_interest_interest_component__WEBPACK_IMPORTED_MODULE_6__["InterestComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -251,17 +257,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
 /* harmony import */ var _header_about_about_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./header/about/about.component */ "./src/app/header/about/about.component.ts");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _header_expr_expr_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./header/expr/expr.component */ "./src/app/header/expr/expr.component.ts");
-/* harmony import */ var angular_mgl_timeline__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! angular-mgl-timeline */ "./node_modules/angular-mgl-timeline/fesm5/angular-mgl-timeline.js");
-/* harmony import */ var _header_about_prof_summary_prof_summary_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./header/about/prof-summary/prof-summary.component */ "./src/app/header/about/prof-summary/prof-summary.component.ts");
-/* harmony import */ var _header_skill_set_skill_set_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./header/skill-set/skill-set.component */ "./src/app/header/skill-set/skill-set.component.ts");
-/* harmony import */ var _header_expr_timeline_timeline_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./header/expr/timeline/timeline.component */ "./src/app/header/expr/timeline/timeline.component.ts");
+/* harmony import */ var _bootstrap_custom_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./bootstrap.custom-module */ "./src/app/bootstrap.custom-module.ts");
+/* harmony import */ var _header_expr_expr_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./header/expr/expr.component */ "./src/app/header/expr/expr.component.ts");
+/* harmony import */ var angular_mgl_timeline__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! angular-mgl-timeline */ "./node_modules/angular-mgl-timeline/fesm5/angular-mgl-timeline.js");
+/* harmony import */ var _header_about_prof_summary_prof_summary_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./header/about/prof-summary/prof-summary.component */ "./src/app/header/about/prof-summary/prof-summary.component.ts");
+/* harmony import */ var _header_skill_set_skill_set_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./header/skill-set/skill-set.component */ "./src/app/header/skill-set/skill-set.component.ts");
+/* harmony import */ var _header_expr_timeline_timeline_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./header/expr/timeline/timeline.component */ "./src/app/header/expr/timeline/timeline.component.ts");
+/* harmony import */ var _header_educat_educat_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./header/educat/educat.component */ "./src/app/header/educat/educat.component.ts");
+/* harmony import */ var _header_interest_interest_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./header/interest/interest.component */ "./src/app/header/interest/interest.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -287,10 +299,12 @@ var AppModule = /** @class */ (function () {
                 _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
                 _header_header_component__WEBPACK_IMPORTED_MODULE_7__["HeaderComponent"],
                 _header_about_about_component__WEBPACK_IMPORTED_MODULE_9__["AboutComponent"],
-                _header_expr_expr_component__WEBPACK_IMPORTED_MODULE_11__["ExprComponent"],
-                _header_about_prof_summary_prof_summary_component__WEBPACK_IMPORTED_MODULE_13__["ProfSummaryComponent"],
-                _header_skill_set_skill_set_component__WEBPACK_IMPORTED_MODULE_14__["SkillSetComponent"],
-                _header_expr_timeline_timeline_component__WEBPACK_IMPORTED_MODULE_15__["TimelineComponent"]
+                _header_expr_expr_component__WEBPACK_IMPORTED_MODULE_12__["ExprComponent"],
+                _header_about_prof_summary_prof_summary_component__WEBPACK_IMPORTED_MODULE_14__["ProfSummaryComponent"],
+                _header_skill_set_skill_set_component__WEBPACK_IMPORTED_MODULE_15__["SkillSetComponent"],
+                _header_expr_timeline_timeline_component__WEBPACK_IMPORTED_MODULE_16__["TimelineComponent"],
+                _header_educat_educat_component__WEBPACK_IMPORTED_MODULE_17__["EducatComponent"],
+                _header_interest_interest_component__WEBPACK_IMPORTED_MODULE_18__["InterestComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -300,13 +314,61 @@ var AppModule = /** @class */ (function () {
                 _material_custom_module__WEBPACK_IMPORTED_MODULE_6__["MaterialModule"],
                 _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__["LayoutModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_10__["AppRoutingModule"],
-                angular_mgl_timeline__WEBPACK_IMPORTED_MODULE_12__["MglTimelineModule"],
+                _bootstrap_custom_module__WEBPACK_IMPORTED_MODULE_11__["AppBootstrapModule"],
+                angular_mgl_timeline__WEBPACK_IMPORTED_MODULE_13__["MglTimelineModule"],
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/bootstrap.custom-module.ts":
+/*!********************************************!*\
+  !*** ./src/app/bootstrap.custom-module.ts ***!
+  \********************************************/
+/*! exports provided: AppBootstrapModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppBootstrapModule", function() { return AppBootstrapModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ngx-bootstrap/dropdown */ "./node_modules/ngx-bootstrap/dropdown/index.js");
+/* harmony import */ var ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ngx-bootstrap/tooltip */ "./node_modules/ngx-bootstrap/tooltip/index.js");
+/* harmony import */ var ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-bootstrap/modal */ "./node_modules/ngx-bootstrap/modal/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var AppBootstrapModule = /** @class */ (function () {
+    function AppBootstrapModule() {
+    }
+    AppBootstrapModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+                ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_2__["BsDropdownModule"].forRoot(),
+                ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_3__["TooltipModule"].forRoot(),
+                ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_4__["ModalModule"].forRoot()
+            ],
+            exports: [ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_2__["BsDropdownModule"], ngx_bootstrap_tooltip__WEBPACK_IMPORTED_MODULE_3__["TooltipModule"], ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_4__["ModalModule"]]
+        })
+    ], AppBootstrapModule);
+    return AppBootstrapModule;
 }());
 
 
@@ -331,7 +393,7 @@ module.exports = "\n.more-button {\n  position: absolute;\n  top: 5px;\n  right:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card-header>\r\n    <mat-card-title>\r\n        <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>perm_identity</mat-icon> {{ matHeader }}</h1>\r\n        <button mat-icon-button class=\"more-button\" [matMenuTriggerFor]=\"menu\" aria-label=\"Toggle menu\">\r\n        <mat-icon>more_vert</mat-icon>\r\n        </button>\r\n        <mat-menu #menu=\"matMenu\" xPosition=\"before\">\r\n        <button mat-menu-item>\r\n            <mat-icon>get_app</mat-icon>Download CV\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>mail</mat-icon><a [href]=\"mailText\">Mail Me</a>\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>call</mat-icon>Call Me\r\n        </button>\r\n        </mat-menu>\r\n    </mat-card-title>\r\n</mat-card-header>\r\n<mat-card-content class=\"dashboard-card-content\">\r\n    <app-prof-summary></app-prof-summary>\r\n</mat-card-content>"
+module.exports = "<mat-card-header>\r\n    <mat-card-title>\r\n        <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>perm_identity</mat-icon> {{ matHeader }}</h1>\r\n        <button mat-icon-button class=\"more-button\" [matMenuTriggerFor]=\"menu\" aria-label=\"Toggle menu\">\r\n        <mat-icon>more_vert</mat-icon>\r\n        </button>\r\n        <mat-menu #menu=\"matMenu\" xPosition=\"before\">\r\n        <button mat-menu-item>\r\n            <mat-icon>get_app</mat-icon>Download CV\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>mail</mat-icon><a [href]=\"mailText\">Mail Me</a>\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>call</mat-icon><a href=\"tel:8658269089\">Call Me</a>\r\n        </button>\r\n        </mat-menu>\r\n    </mat-card-title>\r\n</mat-card-header>\r\n<mat-card-content class=\"dashboard-card-content\">\r\n    <app-prof-summary></app-prof-summary>\r\n</mat-card-content>"
 
 /***/ }),
 
@@ -394,7 +456,7 @@ var AboutComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mgl-timeline-entry-dot{\r\n    background: #51456d !important;\r\n    cursor: pointer;\r\n    color: #fff !important;\r\n  }\r\n\r\n  mgl-timeline-entry-header{\r\n      cursor: pointer;\r\n      font-weight: 200;\r\n  }\r\n\r\n  mgl-timeline-entry-content{\r\n      font-weight: 500;\r\n      text-align: justify;\r\n  }\r\n\r\n  .icons8-angularjs {\r\n    display: inline-block;\r\n    width: 40px;\r\n    height: 40px;\r\n    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICAgIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIKICAgICB2aWV3Qm94PSIwIDAgMjUyIDI1MiIKICAgICBzdHlsZT0iZmlsbDojZDM1NDAwOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMjUydi0yNTJoMjUydjI1MnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48cGF0aCBkPSJNMTI2LDI1MmMtNjkuNTg3ODgsMCAtMTI2LC01Ni40MTIxMiAtMTI2LC0xMjZ2MGMwLC02OS41ODc4OCA1Ni40MTIxMiwtMTI2IDEyNiwtMTI2djBjNjkuNTg3ODgsMCAxMjYsNTYuNDEyMTIgMTI2LDEyNnYwYzAsNjkuNTg3ODggLTU2LjQxMjEyLDEyNiAtMTI2LDEyNnoiIGZpbGw9IiM3ZTRhY2IiPjwvcGF0aD48ZyBpZD0iTGF5ZXJfMSI+PHBhdGggZD0iTTEyNS43MTg2LDMzLjZsLTg3LjkxODYsMzAuNTk3bDEzLjg5MzYsMTEzLjkxNjZsNzQuMTE3NCw0MC4yODY0bDc0LjQ5OTYsLTQwLjgzMjRsMTMuODg5NCwtMTEzLjkxMjR6IiBmaWxsPSIjZmZmZmZmIj48L3BhdGg+PHBhdGggZD0iTTIwNS4wMzU2LDY5LjQxMzRsLTc5LjAzNTYsLTI2Ljg0NjR2MTY2LjE1Mmw2Ni40OTQ0LC0zNi40NDc2eiIgZmlsbD0iI2I3MWMxYyI+PC9wYXRoPjxwYXRoIGQ9Ik0xMjUuNzUyMiw0Mi40ODNsLTc4Ljc5MiwyNy40MjE4bDEyLjU0NTQsMTAyLjg5NThsNjYuMjg4NiwzNi4wMjc2bDAuMjA1OCwtMC4xMDkydi0xNjYuMTUyeiIgZmlsbD0iI2RkMmMwMCI+PC9wYXRoPjxwYXRoIGQ9Ik0xMjYsNTAuMzgzMnYzOS45MzM2bDM2LjAyNzYsNzcuNjgzMmgxOC41MTc4eiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjxwYXRoIGQ9Ik03MS40NTQ2LDE2OGgxOC41MTc4bDM2LjAyNzYsLTc3LjY4MzJ2LTM5LjkzMzZ6IiBmaWxsPSIjZmZmZmZmIj48L3BhdGg+PHJlY3QgeD0iMzAiIHk9IjMwIiB0cmFuc2Zvcm09InNjYWxlKDQuMiw0LjIpIiB3aWR0aD0iNiIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmZmZmIj48L3JlY3Q+PHJlY3QgeD0iMjQiIHk9IjMwIiB0cmFuc2Zvcm09InNjYWxlKDQuMiw0LjIpIiB3aWR0aD0iNiIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmZmZmIj48L3JlY3Q+PC9nPjwvZz48L3N2Zz4=') 50% 50% no-repeat;\r\n    background-size: 100%;\r\n  }\r\n\r\n  .icons8-bootstrap {\r\n    display: inline-block;\r\n    width: 40px;\r\n    height: 40px;\r\n    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICAgIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIKICAgICB2aWV3Qm94PSIwIDAgMjUyIDI1MiIKICAgICBzdHlsZT0iZmlsbDojZDM1NDAwOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMjUydi0yNTJoMjUydjI1MnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48cGF0aCBkPSJNMTI2LDI1MmMtNjkuNTg3ODgsMCAtMTI2LC01Ni40MTIxMiAtMTI2LC0xMjZ2MGMwLC02OS41ODc4OCA1Ni40MTIxMiwtMTI2IDEyNiwtMTI2djBjNjkuNTg3ODgsMCAxMjYsNTYuNDEyMTIgMTI2LDEyNnYwYzAsNjkuNTg3ODggLTU2LjQxMjEyLDEyNiAtMTI2LDEyNnoiIGZpbGw9IiM3ZTRhY2IiPjwvcGF0aD48ZyBpZD0iTGF5ZXJfMSI+PHBhdGggZD0iTTIwMS42LDE4MC42YzAsMTEuNjAwNCAtOS4zOTk2LDIxIC0yMSwyMWgtMTA5LjJjLTExLjU5NjIsMCAtMjEsLTkuMzk5NiAtMjEsLTIxdi0xMDkuMmMwLC0xMS42MDA0IDkuNDAzOCwtMjEgMjEsLTIxaDEwOS4yYzExLjYwMDQsMCAyMSw5LjM5OTYgMjEsMjF6IiBmaWxsPSIjNjczYWI3Ij48L3BhdGg+PHBhdGggZD0iTTE2My45MjYsMTMyLjcyYy0yLjczLC0zLjc4IC02LjY3OCwtNi4zODQgLTExLjc2LC03Ljc3YzAsMCA0LjI4NCwtMS41NTQgOC4xNDgsLTcuMzVjMi4zMSwtMy42OTYgMy40ODYsLTguMTQ4IDMuNDg2LC0xMy4zNTZjMCwtOS4wMyAtMy4yNzYsLTE1Ljk2IC05LjgyOCwtMjAuNzA2Yy02LjU1MiwtNC43NDYgLTEzLjk0NCwtNy45MzggLTI2LjUwMiwtNy45MzhoLTM5LjI3djEwMC44aDQzLjgwNmMxMS44ODYsLTAuMDg0IDIwLjgzMiwtMi42NDYgMjYuOTIyLC03LjU2YzYuMDQ4LC00Ljk5OCA5LjA3MiwtMTIuMzkgOS4wNzIsLTIyLjI2YzAsLTUuNDYgLTEuMzQ0LC0xMC4wOCAtNC4wNzQsLTEzLjg2ek0xMTMuNCw5Mi40YzAsMCAxNy41MTQsMCAxNy44NSwwYzYuMzg0LDAgMTEuNTUsNS4xNjYgMTEuNTUsMTEuNTVjMCw2LjM4NCAtNS4xNjYsMTEuNTUgLTExLjU1LDExLjU1Yy0wLjMzNiwwIC0xNy44NSwwIC0xNy44NSwwek0xMzQuNCwxNTkuNmgtMjF2LTI1LjJoMjFjNi45NzIsMCAxMi42LDUuNjI4IDEyLjYsMTIuNmMwLDYuOTcyIC01LjYyOCwxMi42IC0xMi42LDEyLjZ6IiBmaWxsPSIjZmZmZmZmIj48L3BhdGg+PC9nPjwvZz48L3N2Zz4=') 50% 50% no-repeat;\r\n    background-size: 100%;\r\n  }\r\n\r\n  .icons8-css3 {\r\n    display: inline-block;\r\n    width: 40px;\r\n    height: 40px;\r\n    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICAgIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIKICAgICB2aWV3Qm94PSIwIDAgMjUyIDI1MiIKICAgICBzdHlsZT0iZmlsbDojOGU0NGFkOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMjUydi0yNTJoMjUydjI1MnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48cGF0aCBkPSJNMTI2LDI1MmMtNjkuNTg3ODgsMCAtMTI2LC01Ni40MTIxMiAtMTI2LC0xMjZ2MGMwLC02OS41ODc4OCA1Ni40MTIxMiwtMTI2IDEyNiwtMTI2djBjNjkuNTg3ODgsMCAxMjYsNTYuNDEyMTIgMTI2LDEyNnYwYzAsNjkuNTg3ODggLTU2LjQxMjEyLDEyNiAtMTI2LDEyNnoiIGZpbGw9IiM1MTQ1NmQiPjwvcGF0aD48Zz48ZyBpZD0ic3VyZmFjZTEiPjxwYXRoIGQ9Ik0xOTcuNCw0Ni4yaC0xNDIuOGwxMi42LDE0Mi44bDU4LjgsMTYuOGw1OC44LC0xNi44eiIgZmlsbD0iIzAyNzdiZCI+PC9wYXRoPjxwYXRoIGQ9Ik0xMjYsNTguOHYxMzMuOTczNDRsNDcuMDM2NzIsLTEzLjQzNjcybDEwLjUsLTEyMC41MzY3MnoiIGZpbGw9IiMwMzliZTUiPjwvcGF0aD48cGF0aCBkPSJNMTY0LjIyNjU2LDc5LjhoLTM4LjIyNjU2djE2LjhoMjAuNTczNDRsLTEuMjQ2ODcsMTYuOGgtMTkuMzI2NTZ2MTYuOGgxOC40NzM0NGwtMS4yNDY4OCwxOC45bC0xNy4yMjY1Niw1Ljg3MzQ0djE3LjY1MzEybDMzLjE3MzQ0LC0xMC45MjY1NmwyLjk1MzEzLC00OC4zeiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjxwYXRoIGQ9Ik0xMjYsNzkuOHYxNi44aC0zNy4zNzM0NGwtMS4yNjMyOCwtMTYuOHpNMTA2LjY3MzQ0LDExMy40bDAuODUzMTIsMTYuOGgxOC40NzM0NHYtMTYuOHpNMTA4LjM2MzI4LDEzOC42aC0xNi44bDEuMjYzMjgsMjMuMWwzMy4xNzM0NCwxMC45MjY1NnYtMTcuNjUzMTJsLTE3LjIyNjU2LC01Ljg3MzQ0eiIgZmlsbD0iI2VlZWVlZSI+PC9wYXRoPjwvZz48L2c+PC9nPjwvc3ZnPg==') 50% 50% no-repeat;\r\n    background-size: 100%;\r\n  }"
+module.exports = "mgl-timeline-entry-dot{\r\n    background: #51456d !important;\r\n    cursor: pointer;\r\n    color: #fff !important;\r\n  }\r\n\r\n  mgl-timeline-entry-dot {\r\n    padding-top: 5px;\r\n  }\r\n\r\n  mgl-timeline-entry-header{\r\n      cursor: pointer;\r\n      font-weight: 200;\r\n  }\r\n\r\n  mgl-timeline-entry-content{\r\n      font-weight: 500;\r\n      text-align: justify;\r\n  }\r\n\r\n  .icons8-angularjs {\r\n    display: inline-block;\r\n    width: 40px;\r\n    height: 40px;\r\n    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICAgIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIKICAgICB2aWV3Qm94PSIwIDAgMjUyIDI1MiIKICAgICBzdHlsZT0iZmlsbDojZDM1NDAwOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMjUydi0yNTJoMjUydjI1MnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48cGF0aCBkPSJNMTI2LDI1MmMtNjkuNTg3ODgsMCAtMTI2LC01Ni40MTIxMiAtMTI2LC0xMjZ2MGMwLC02OS41ODc4OCA1Ni40MTIxMiwtMTI2IDEyNiwtMTI2djBjNjkuNTg3ODgsMCAxMjYsNTYuNDEyMTIgMTI2LDEyNnYwYzAsNjkuNTg3ODggLTU2LjQxMjEyLDEyNiAtMTI2LDEyNnoiIGZpbGw9IiM3ZTRhY2IiPjwvcGF0aD48ZyBpZD0iTGF5ZXJfMSI+PHBhdGggZD0iTTEyNS43MTg2LDMzLjZsLTg3LjkxODYsMzAuNTk3bDEzLjg5MzYsMTEzLjkxNjZsNzQuMTE3NCw0MC4yODY0bDc0LjQ5OTYsLTQwLjgzMjRsMTMuODg5NCwtMTEzLjkxMjR6IiBmaWxsPSIjZmZmZmZmIj48L3BhdGg+PHBhdGggZD0iTTIwNS4wMzU2LDY5LjQxMzRsLTc5LjAzNTYsLTI2Ljg0NjR2MTY2LjE1Mmw2Ni40OTQ0LC0zNi40NDc2eiIgZmlsbD0iI2I3MWMxYyI+PC9wYXRoPjxwYXRoIGQ9Ik0xMjUuNzUyMiw0Mi40ODNsLTc4Ljc5MiwyNy40MjE4bDEyLjU0NTQsMTAyLjg5NThsNjYuMjg4NiwzNi4wMjc2bDAuMjA1OCwtMC4xMDkydi0xNjYuMTUyeiIgZmlsbD0iI2RkMmMwMCI+PC9wYXRoPjxwYXRoIGQ9Ik0xMjYsNTAuMzgzMnYzOS45MzM2bDM2LjAyNzYsNzcuNjgzMmgxOC41MTc4eiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjxwYXRoIGQ9Ik03MS40NTQ2LDE2OGgxOC41MTc4bDM2LjAyNzYsLTc3LjY4MzJ2LTM5LjkzMzZ6IiBmaWxsPSIjZmZmZmZmIj48L3BhdGg+PHJlY3QgeD0iMzAiIHk9IjMwIiB0cmFuc2Zvcm09InNjYWxlKDQuMiw0LjIpIiB3aWR0aD0iNiIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmZmZmIj48L3JlY3Q+PHJlY3QgeD0iMjQiIHk9IjMwIiB0cmFuc2Zvcm09InNjYWxlKDQuMiw0LjIpIiB3aWR0aD0iNiIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmZmZmIj48L3JlY3Q+PC9nPjwvZz48L3N2Zz4=') 50% 50% no-repeat;\r\n    background-size: 100%;\r\n  }\r\n\r\n  .icons8-bootstrap {\r\n    display: inline-block;\r\n    width: 40px;\r\n    height: 40px;\r\n    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICAgIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIKICAgICB2aWV3Qm94PSIwIDAgMjUyIDI1MiIKICAgICBzdHlsZT0iZmlsbDojZDM1NDAwOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMjUydi0yNTJoMjUydjI1MnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48cGF0aCBkPSJNMTI2LDI1MmMtNjkuNTg3ODgsMCAtMTI2LC01Ni40MTIxMiAtMTI2LC0xMjZ2MGMwLC02OS41ODc4OCA1Ni40MTIxMiwtMTI2IDEyNiwtMTI2djBjNjkuNTg3ODgsMCAxMjYsNTYuNDEyMTIgMTI2LDEyNnYwYzAsNjkuNTg3ODggLTU2LjQxMjEyLDEyNiAtMTI2LDEyNnoiIGZpbGw9IiM3ZTRhY2IiPjwvcGF0aD48ZyBpZD0iTGF5ZXJfMSI+PHBhdGggZD0iTTIwMS42LDE4MC42YzAsMTEuNjAwNCAtOS4zOTk2LDIxIC0yMSwyMWgtMTA5LjJjLTExLjU5NjIsMCAtMjEsLTkuMzk5NiAtMjEsLTIxdi0xMDkuMmMwLC0xMS42MDA0IDkuNDAzOCwtMjEgMjEsLTIxaDEwOS4yYzExLjYwMDQsMCAyMSw5LjM5OTYgMjEsMjF6IiBmaWxsPSIjNjczYWI3Ij48L3BhdGg+PHBhdGggZD0iTTE2My45MjYsMTMyLjcyYy0yLjczLC0zLjc4IC02LjY3OCwtNi4zODQgLTExLjc2LC03Ljc3YzAsMCA0LjI4NCwtMS41NTQgOC4xNDgsLTcuMzVjMi4zMSwtMy42OTYgMy40ODYsLTguMTQ4IDMuNDg2LC0xMy4zNTZjMCwtOS4wMyAtMy4yNzYsLTE1Ljk2IC05LjgyOCwtMjAuNzA2Yy02LjU1MiwtNC43NDYgLTEzLjk0NCwtNy45MzggLTI2LjUwMiwtNy45MzhoLTM5LjI3djEwMC44aDQzLjgwNmMxMS44ODYsLTAuMDg0IDIwLjgzMiwtMi42NDYgMjYuOTIyLC03LjU2YzYuMDQ4LC00Ljk5OCA5LjA3MiwtMTIuMzkgOS4wNzIsLTIyLjI2YzAsLTUuNDYgLTEuMzQ0LC0xMC4wOCAtNC4wNzQsLTEzLjg2ek0xMTMuNCw5Mi40YzAsMCAxNy41MTQsMCAxNy44NSwwYzYuMzg0LDAgMTEuNTUsNS4xNjYgMTEuNTUsMTEuNTVjMCw2LjM4NCAtNS4xNjYsMTEuNTUgLTExLjU1LDExLjU1Yy0wLjMzNiwwIC0xNy44NSwwIC0xNy44NSwwek0xMzQuNCwxNTkuNmgtMjF2LTI1LjJoMjFjNi45NzIsMCAxMi42LDUuNjI4IDEyLjYsMTIuNmMwLDYuOTcyIC01LjYyOCwxMi42IC0xMi42LDEyLjZ6IiBmaWxsPSIjZmZmZmZmIj48L3BhdGg+PC9nPjwvZz48L3N2Zz4=') 50% 50% no-repeat;\r\n    background-size: 100%;\r\n  }\r\n\r\n  .icons8-css3 {\r\n    display: inline-block;\r\n    width: 40px;\r\n    height: 40px;\r\n    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICAgIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIKICAgICB2aWV3Qm94PSIwIDAgMjUyIDI1MiIKICAgICBzdHlsZT0iZmlsbDojOGU0NGFkOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMjUydi0yNTJoMjUydjI1MnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48cGF0aCBkPSJNMTI2LDI1MmMtNjkuNTg3ODgsMCAtMTI2LC01Ni40MTIxMiAtMTI2LC0xMjZ2MGMwLC02OS41ODc4OCA1Ni40MTIxMiwtMTI2IDEyNiwtMTI2djBjNjkuNTg3ODgsMCAxMjYsNTYuNDEyMTIgMTI2LDEyNnYwYzAsNjkuNTg3ODggLTU2LjQxMjEyLDEyNiAtMTI2LDEyNnoiIGZpbGw9IiM1MTQ1NmQiPjwvcGF0aD48Zz48ZyBpZD0ic3VyZmFjZTEiPjxwYXRoIGQ9Ik0xOTcuNCw0Ni4yaC0xNDIuOGwxMi42LDE0Mi44bDU4LjgsMTYuOGw1OC44LC0xNi44eiIgZmlsbD0iIzAyNzdiZCI+PC9wYXRoPjxwYXRoIGQ9Ik0xMjYsNTguOHYxMzMuOTczNDRsNDcuMDM2NzIsLTEzLjQzNjcybDEwLjUsLTEyMC41MzY3MnoiIGZpbGw9IiMwMzliZTUiPjwvcGF0aD48cGF0aCBkPSJNMTY0LjIyNjU2LDc5LjhoLTM4LjIyNjU2djE2LjhoMjAuNTczNDRsLTEuMjQ2ODcsMTYuOGgtMTkuMzI2NTZ2MTYuOGgxOC40NzM0NGwtMS4yNDY4OCwxOC45bC0xNy4yMjY1Niw1Ljg3MzQ0djE3LjY1MzEybDMzLjE3MzQ0LC0xMC45MjY1NmwyLjk1MzEzLC00OC4zeiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjxwYXRoIGQ9Ik0xMjYsNzkuOHYxNi44aC0zNy4zNzM0NGwtMS4yNjMyOCwtMTYuOHpNMTA2LjY3MzQ0LDExMy40bDAuODUzMTIsMTYuOGgxOC40NzM0NHYtMTYuOHpNMTA4LjM2MzI4LDEzOC42aC0xNi44bDEuMjYzMjgsMjMuMWwzMy4xNzM0NCwxMC45MjY1NnYtMTcuNjUzMTJsLTE3LjIyNjU2LC01Ljg3MzQ0eiIgZmlsbD0iI2VlZWVlZSI+PC9wYXRoPjwvZz48L2c+PC9nPjwvc3ZnPg==') 50% 50% no-repeat;\r\n    background-size: 100%;\r\n  }"
 
 /***/ }),
 
@@ -436,19 +498,19 @@ var ProfSummaryComponent = /** @class */ (function () {
         this.expandEnabled = true;
         this.entries = [
             {
-                header: 'Front End Development',
+                header: 'Front End Developer',
                 content: 'Creative Front-end Developer with 1.6+ years of experience leveraging Angular 2/4/5/6 and JavaScript to build responsive websites with dynamic components and interactive features that drive business growth and improve UX. Extensively Worked on HTML5, CSS3, JQuery, Bootstrap, Angular Material in development of webmethods UI.',
-                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.6+<br>&nbsp;&nbsp;&nbsp;&nbsp;Yr</p>'
+                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.6+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr</p>'
             },
             {
-                header: 'Back End Development',
+                header: 'Back End Developer',
                 content: 'Experiencing 1.3+ yr in designing, developing, and managing complex rest full web services by using Spring Boot, Core Java and MySQL.Building projects with maven.Some amount of work done on mongoDB.',
-                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.3+<br>&nbsp;&nbsp;&nbsp;&nbsp;Yr</p>'
+                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.3+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr</p>'
             },
             {
-                header: 'WebMethods Development',
+                header: 'WebMethods Developer',
                 content: 'Having 1.6+ yr of experience in this product and creating dynamic web apps in angular for it.It\'s a pure java based multiplatform enterprise integration product which is bascially used by developer to build and test enterprise service flow.',
-                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.6+<br>&nbsp;&nbsp;&nbsp;&nbsp;Yr'
+                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.6+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr'
             },
             {
                 header: 'Agile Test Automation',
@@ -473,6 +535,96 @@ var ProfSummaryComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ProfSummaryComponent);
     return ProfSummaryComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/header/educat/educat.component.css":
+/*!****************************************************!*\
+  !*** ./src/app/header/educat/educat.component.css ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".card{\r\n    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);\r\n}\r\n\r\n.card [class*=\"card-header-\"]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) {\r\n    border-radius: 3px;\r\n    margin-top: -40px;\r\n    padding: 15px;\r\n}\r\n\r\n.card .card-header-warning .card-icon, .card .card-header-warning:not(.card-header-icon):not(.card-header-text), .card .card-header-warning .card-text {\r\n    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);\r\n}\r\n\r\n.card .card-header-warning .card-icon, .card .card-header-warning .card-text, .card .card-header-warning:not(.card-header-icon):not(.card-header-text), .card.bg-warning, .card.card-rotate.bg-warning .front, .card.card-rotate.bg-warning .back {\r\n    /* background: linear-gradient(60deg, #ffa726, #fb8c00); */\r\n    background: #51456d;\r\n}\r\n\r\n.card [class*=\"card-header-\"] {\r\n    margin: 0px 15px 0;\r\n    padding: 0;\r\n    position: relative;\r\n}\r\n\r\n.card .card-header {\r\n    z-index: 3 !important;\r\n}\r\n\r\n.card [class*=\"card-header-\"], .card[class*=\"bg-\"] {\r\n    color: #fff;\r\n}\r\n\r\n.card .card-header {\r\n    border-bottom: none;\r\n    background: transparent;\r\n}\r\n\r\n.card-header:first-child {\r\n    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;\r\n}\r\n\r\n.edu-card-content{\r\n    margin-top:50px !important;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/header/educat/educat.component.html":
+/*!*****************************************************!*\
+  !*** ./src/app/header/educat/educat.component.html ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-card-header [ngStyle]=\"{'text-align': 'center'}\">\n  <mat-card-title>\n      <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>school</mat-icon> {{ matHeader }}</h1>\n  </mat-card-title>\n</mat-card-header>\n<mat-card-content class=\"edu-card-content\">\n  <div class=\"row\">  \n    <div class=\"col-lg-12 col-md-12\">\n      <div class=\"card\">\n        <div class=\"card-header card-header-warning\">\n          <h4 class=\"card-title\">Computer Science And Engineering (B.Tech)</h4>\n          <p class=\"card-category\">2012 - 2016</p>\n        </div>\n        <div class=\"card-body table-responsive\">\n            <table class=\"table table-hover\">\n                <thead class=\"text-default\">\n                    <th>ID</th>\n                    <th>Examination Passed</th>\n                    <th>Board</th>\n                    <th>Institution</th>\n                    <th>Year of Passing</th>\n                    <th>Percentage (%)</th>\n                </thead>\n                <tbody>\n                    <tr *ngFor=\"let edu of educat\">\n                        <td>{{ edu.id }}</td>\n                        <td [innerHtml]=\"edu.examName\"></td>\n                        <td>{{ edu.board }}</td>\n                        <td>{{ edu.instName }}</td>\n                        <td>{{ edu.yop }}</td>\n                        <td>{{ edu.percentage }}</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</mat-card-content>"
+
+/***/ }),
+
+/***/ "./src/app/header/educat/educat.component.ts":
+/*!***************************************************!*\
+  !*** ./src/app/header/educat/educat.component.ts ***!
+  \***************************************************/
+/*! exports provided: EducatComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EducatComponent", function() { return EducatComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var EducatComponent = /** @class */ (function () {
+    function EducatComponent() {
+        this.matHeader = 'Academic Profile';
+        this.educat = [
+            {
+                id: '1',
+                examName: 'B.Tech <br/>(Computer Sceinece And Engineering)',
+                board: 'Biju Patnaik University Of Technology',
+                instName: 'Govt. College Of Engineering, Bhawanipatna',
+                yop: 2016,
+                percentage: 74.98
+            },
+            {
+                id: '2',
+                examName: 'Intermediate (12th)',
+                board: 'Council Of Higher Secondary Education',
+                instName: 'Christ College',
+                yop: 2011,
+                percentage: 60.16
+            },
+            {
+                id: '3',
+                examName: 'Metriculation',
+                board: 'Board Of Secondary Education',
+                instName: 'Sivananda Centenary Boy\'s High School',
+                yop: 2009,
+                percentage: 75.16
+            }
+        ];
+    }
+    EducatComponent.prototype.ngOnInit = function () {
+    };
+    EducatComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-educat',
+            template: __webpack_require__(/*! ./educat.component.html */ "./src/app/header/educat/educat.component.html"),
+            styles: [__webpack_require__(/*! ./educat.component.css */ "./src/app/header/educat/educat.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], EducatComponent);
+    return EducatComponent;
 }());
 
 
@@ -557,7 +709,7 @@ var ExprComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "* {\r\n    box-sizing: border-box;\r\n}\r\n\r\n/* The actual timeline (the vertical ruler) */\r\n\r\n.timeline {\r\n    position: relative;\r\n    max-width: 1200px;\r\n    margin: 0 auto;\r\n}\r\n\r\n/* The actual timeline (the vertical ruler) */\r\n\r\n.timeline::after {\r\n    content: '';\r\n    position: absolute;\r\n    width: 6px;\r\n    background-color: #51456d;\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 50%;\r\n    margin-left: -3px;\r\n}\r\n\r\n/* Container around content */\r\n\r\n.container {\r\n    padding: 10px 40px;\r\n    position: relative;\r\n    background-color: inherit;\r\n    width: 50%;\r\n}\r\n\r\n/* The circles on the timeline */\r\n\r\n.container::after {\r\n    content: '';\r\n    position: absolute;\r\n    width: 25px;\r\n    height: 25px;\r\n    right: -17px;\r\n    background-color: white;\r\n    border: 4px solid #FF9F55;\r\n    top: 15px;\r\n    border-radius: 50%;\r\n    z-index: 1;\r\n}\r\n\r\n/* Place the container to the left */\r\n\r\n.left {\r\n    left: 0;\r\n}\r\n\r\n/* Place the container to the right */\r\n\r\n.right {\r\n    left: 50%;\r\n}\r\n\r\n/* Add arrows to the left container (pointing right) */\r\n\r\n.left::before {\r\n    content: \" \";\r\n    height: 0;\r\n    position: absolute;\r\n    top: 22px;\r\n    width: 0;\r\n    z-index: 1;\r\n    right: 30px;\r\n    border: medium solid white;\r\n    border-width: 10px 0 10px 10px;\r\n    border-color: transparent transparent transparent #51456d;\r\n}\r\n\r\n/* Add arrows to the right container (pointing left) */\r\n\r\n.right::before {\r\n    content: \" \";\r\n    height: 0;\r\n    position: absolute;\r\n    top: 22px;\r\n    width: 0;\r\n    z-index: 1;\r\n    left: 30px;\r\n    border: medium solid white;\r\n    border-width: 10px 10px 10px 0;\r\n    border-color: transparent #51456d transparent transparent;\r\n}\r\n\r\n/* Fix the circle for containers on the right side */\r\n\r\n.right::after {\r\n    left: -16px;\r\n}\r\n\r\n/* The actual content */\r\n\r\n.content {\r\n    padding: 20px 30px;\r\n    background-color: white;\r\n    position: relative;\r\n    \r\n    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);\r\n}\r\n\r\n/* Media queries - Responsive timeline on screens less than 600px wide */\r\n\r\n@media screen and (max-width: 600px) {\r\n  /* Place the timelime to the left */\r\n  .timeline::after {\r\n    left: 31px;\r\n  }\r\n  \r\n  /* Full-width containers */\r\n  .container {\r\n    width: 100%;\r\n    padding-left: 70px;\r\n    padding-right: 25px;\r\n  }\r\n  \r\n  /* Make sure that all arrows are pointing leftwards */\r\n  .container::before {\r\n    left: 60px;\r\n    border: medium solid white;\r\n    border-width: 10px 10px 10px 0;\r\n    border-color: transparent #51456d transparent transparent;\r\n  }\r\n\r\n  /* Make sure all circles are at the same spot */\r\n  .left::after, .right::after {\r\n    left: 15px;\r\n  }\r\n  \r\n  /* Make all right containers behave like the left ones */\r\n  .right {\r\n    left: 0%;\r\n  }\r\n}"
+module.exports = "* {\r\n    box-sizing: border-box;\r\n}\r\n\r\n/* The actual timeline (the vertical ruler) */\r\n\r\n.cust-timeline {\r\n    position: relative;\r\n    max-width: 1200px;\r\n    margin: 0 auto;\r\n}\r\n\r\n/* The actual timeline (the vertical ruler) */\r\n\r\n.cust-timeline::after {\r\n    content: '';\r\n    position: absolute;\r\n    width: 6px;\r\n    background-color: #51456d;\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 50%;\r\n    margin-left: -3px;\r\n}\r\n\r\n/* Container around content */\r\n\r\n.exp-container {\r\n    padding: 10px 40px;\r\n    position: relative;\r\n    background-color: inherit;\r\n    width: 50%;\r\n}\r\n\r\n/* The circles on the timeline */\r\n\r\n.exp-container::after {\r\n    content: '';\r\n    position: absolute;\r\n    width: 25px;\r\n    height: 25px;\r\n    right: -14px;\r\n    background-color: white;\r\n    border: 4px solid #FF9F55;\r\n    top: 15px;\r\n    border-radius: 50%;\r\n    z-index: 1;\r\n}\r\n\r\n/* Place the container to the left */\r\n\r\n.exp-left {\r\n    left: 0;\r\n}\r\n\r\n/* Place the container to the right */\r\n\r\n.exp-right {\r\n    left: 50%;\r\n}\r\n\r\n/* Add arrows to the left container (pointing right) */\r\n\r\n.exp-left::before {\r\n    content: \" \";\r\n    height: 0;\r\n    position: absolute;\r\n    top: 22px;\r\n    width: 0;\r\n    z-index: 1;\r\n    right: 30px;\r\n    border: medium solid white;\r\n    border-width: 10px 0 10px 10px;\r\n    border-color: transparent transparent transparent #51456d;\r\n}\r\n\r\n/* Add arrows to the right container (pointing left) */\r\n\r\n.exp-right::before {\r\n    content: \" \";\r\n    height: 0;\r\n    position: absolute;\r\n    top: 22px;\r\n    width: 0;\r\n    z-index: 1;\r\n    left: 30px;\r\n    border: medium solid white;\r\n    border-width: 10px 10px 10px 0;\r\n    border-color: transparent #51456d transparent transparent;\r\n}\r\n\r\n/* Fix the circle for containers on the right side */\r\n\r\n.exp-right::after {\r\n    left: -16px;\r\n}\r\n\r\n/* The actual content */\r\n\r\n.exp-content {\r\n    padding: 20px 30px;\r\n    background-color: white;\r\n    position: relative;\r\n    \r\n    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);\r\n}\r\n\r\n/* Media queries - Responsive timeline on screens less than 600px wide */\r\n\r\n@media screen and (max-width: 600px) {\r\n  /* Place the timelime to the left */\r\n  .cust-timeline::after {\r\n    left: 31px;\r\n  }\r\n  \r\n  /* Full-width containers */\r\n  .exp-container {\r\n    width: 100%;\r\n    padding-left: 70px;\r\n    padding-right: 25px;\r\n  }\r\n  \r\n  /* Make sure that all arrows are pointing leftwards */\r\n  .exp-container::before {\r\n    left: 60px;\r\n    border: medium solid white;\r\n    border-width: 10px 10px 10px 0;\r\n    border-color: transparent #51456d transparent transparent;\r\n  }\r\n\r\n  /* Make sure all circles are at the same spot */\r\n  .exp-left::after, .exp-right::after {\r\n    left: 18px;\r\n  }\r\n  \r\n  /* Make all right containers behave like the left ones */\r\n  .exp-right {\r\n    left: 0%;\r\n  }\r\n}"
 
 /***/ }),
 
@@ -568,7 +720,7 @@ module.exports = "* {\r\n    box-sizing: border-box;\r\n}\r\n\r\n/* The actual t
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"timeline\" *ngFor=\"let exper of experiences\">\n    <div class=\"container\" [ngClass]=\"exper.alignItem\">\n      <div class=\"content\">\n        <h2 style=\"font-weight: 400\">{{ exper.desig }}</h2>\n        <p><b>{{ exper.yrs }}</b></p>\n        <p style=\"color: purple\"><b>Company:</b> Software AG</p>\n        <p style=\"text-align: justify; width: 100%\">{{ exper.prof_desc }}</p>\n      </div>\n    </div>\n  </div>\n  "
+module.exports = "<div class=\"cust-timeline\" *ngFor=\"let exper of experiences\">\n    <div class=\"exp-container\" [ngClass]=\"exper.alignItem\">\n      <div class=\"exp-content\">\n        <h2 style=\"font-weight: 400\">{{ exper.desig }}</h2>\n        <p><b>{{ exper.yrs }}</b></p>\n        <p style=\"color: purple\"><b>Company:</b> Software AG</p>\n        <p style=\"text-align: justify; width: 100%\">{{ exper.prof_desc }}</p>\n      </div>\n    </div>\n</div>\n  "
 
 /***/ }),
 
@@ -596,9 +748,9 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var TimelineComponent = /** @class */ (function () {
     function TimelineComponent() {
         this.experiences = [
-            { alignItem: 'left', desig: 'Angular Developer', yrs: 'Aug 2017 - Oct 2018', prof_desc: 'Developing API for WebMethods Integration Platform so that users can dragAndDrop different services.It will keep tracking of tree like structure folder within packages.Used Angular 2-6, Html5, CSS3, Javascript.' },
-            { alignItem: 'right', desig: 'Spring Boot Developer', yrs: 'Oct 2017 - Oct 2018', prof_desc: 'Designing, developing, and managing complex rest full web services using Spring Boot, Core Java and MySQL.Worked on WebMethods Integration Platform to provide access to rest full web services.' },
-            { alignItem: 'left', desig: 'Testing', yrs: 'Apr 2017 - Jul 2018', prof_desc: 'Creating jenkins jobs for product CNl, written test set for WebMethods Service Development in Junits. Testing products in environment like Linux(susse,redhat)/Mac/Windows. Correcting existing QFT test suite. Excellence in worked with agile methodology.' },
+            { alignItem: 'exp-left', desig: 'Angular Developer', yrs: 'Aug 2017 - Oct 2018', prof_desc: 'Developing API for WebMethods Integration Platform so that users can dragAndDrop different services.It will keep tracking of tree like structure folder within packages.Used Angular 2-6, Html5, CSS3, Javascript.' },
+            { alignItem: 'exp-right', desig: 'Spring Boot Developer', yrs: 'Oct 2017 - Oct 2018', prof_desc: 'Designing, developing, and managing complex rest full web services using Spring Boot, Core Java and MySQL.Worked on WebMethods Integration Platform to provide access to rest full web services.' },
+            { alignItem: 'exp-left', desig: 'Testing', yrs: 'Apr 2017 - Jul 2018', prof_desc: 'Creating jenkins jobs for product CNl, written test set for WebMethods Service Development in Junits. Testing products in environment like Linux(susse,redhat)/Mac/Windows. Correcting existing QFT test suite. Excellence in worked with agile methodology.' },
         ];
     }
     TimelineComponent.prototype.ngOnInit = function () {
@@ -636,7 +788,7 @@ module.exports = "/*****************************\n  sidenav content goes below\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n    <mat-sidenav\n    #drawer\n    class=\"sidenav\"\n    fixedInViewport=\"true\"\n    [attr.role]=\"(isHandset$ | async) ? 'dialog' : 'navigation'\"\n    [mode]=\"(isHandset$ | async) ? 'over' : 'side'\"\n    [opened]=\"!(isHandset$ | async)\">\n    <mat-toolbar color=\"primary\">Nitesh Kumar Sharma</mat-toolbar>\n    \n    <img src=\"https://i.postimg.cc/0bhMjx45/nit.jpg\"><br/>\n    <div class=\"social-icon\">\n      <a href=\"https://www.linkedin.com/in/nitesh-sharma-7194195b/\" target=\"_blank\"><i class=\"fa fa-linkedin fa-lg\" matTooltip=\"linkedin\" matTooltipClass=\"custom-tooltip-black\" aria-hidden=\"true\"></i></a>\n      <a href=\"https://github.com/nitesh663/DAILY/\" target=\"_blank\"><i class=\"fa fa-github fa-lg\" matTooltip=\"github\" aria-hidden=\"true\"></i></a>\n      <a href=\"https://www.facebook.com/niteshdsuperboy\" target=\"_blank\"><i class=\"fa fa-facebook fa-lg\" matTooltip=\"facebook\" aria-hidden=\"true\"></i></a>\n      <a href=\"https://twitter.com/nitesh663\" target=\"_blank\"><i class=\"fa fa-twitter fa-lg\" matTooltip=\"twitter\" aria-hidden=\"true\"></i></a>\n    </div>\n    <!--<p style=\"color: #bfab43; text-align: center\">Nitesh Kumar Sharma</p>-->\n    <mat-nav-list>\n      <a mat-list-item routerLink=\"/\"><mat-icon>border_color</mat-icon>About</a>\n      <a mat-list-item routerLink=\"/skill-set\"><mat-icon>restaurant_menu</mat-icon>Skills</a>\n      <a mat-list-item routerLink=\"/exp\"><mat-icon>work</mat-icon>Experience</a>\n      <a mat-list-item routerLink=\"/edu\"><mat-icon>school</mat-icon>Education</a>\n      <a mat-list-item><mat-icon>style</mat-icon>Interests</a>\n      <a mat-list-item><mat-icon>beenhere</mat-icon>Certification</a>\n      <a mat-list-item><mat-icon>beenhere</mat-icon>Contact</a>\n    </mat-nav-list>\n    <footer style=\"padding-top: 3em; text-align:center; color: #e1f5ee;\">\n        <h5 style=\"font-weight: 4\">© 2018 Angular Developer</h5>\n    </footer>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <button\n        type=\"button\"\n        aria-label=\"Toggle sidenav\"\n        mat-icon-button\n        (click)=\"drawer.toggle()\"\n        *ngIf=\"isHandset$ | async\">\n        <mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>\n      </button>\n      <span style=\"cursor: pointer\" routerLink=\"/\"><mat-icon>home</mat-icon></span>\n      <span class=\"spacer\"></span>\n      <a routerLink=\"/\">About</a>\n      <a routerLink=\"/skill-set\">Skills</a>\n      <a routerLink=\"/exp\">Experience</a>\n      <a >Education</a>\n      <a >Interests</a>\n      <a >Certification</a>\n      <a >Contact</a>\n    </mat-toolbar>\n    <!-- Add Content Here -->\n    <mat-card>\n        <router-outlet>\n          \n        </router-outlet>\n    </mat-card>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n"
+module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n    <mat-sidenav\n    #drawer\n    class=\"sidenav\"\n    fixedInViewport=\"true\"\n    [attr.role]=\"(isHandset$ | async) ? 'dialog' : 'navigation'\"\n    [mode]=\"(isHandset$ | async) ? 'over' : 'side'\"\n    [opened]=\"!(isHandset$ | async)\">\n    <mat-toolbar color=\"primary\">Nitesh Kumar Sharma</mat-toolbar>\n    \n    <img src=\"https://i.postimg.cc/0bhMjx45/nit.jpg\"><br/>\n    <div class=\"social-icon\">\n      <a href=\"https://www.linkedin.com/in/nitesh-sharma-7194195b/\" target=\"_blank\"><i class=\"fa fa-linkedin fa-lg\" matTooltip=\"linkedin\" matTooltipClass=\"custom-tooltip-black\" aria-hidden=\"true\"></i></a>\n      <a href=\"https://github.com/nitesh663/DAILY/\" target=\"_blank\"><i class=\"fa fa-github fa-lg\" matTooltip=\"github\" aria-hidden=\"true\"></i></a>\n      <a href=\"https://www.facebook.com/niteshdsuperboy\" target=\"_blank\"><i class=\"fa fa-facebook fa-lg\" matTooltip=\"facebook\" aria-hidden=\"true\"></i></a>\n      <a href=\"https://twitter.com/nitesh663\" target=\"_blank\"><i class=\"fa fa-twitter fa-lg\" matTooltip=\"twitter\" aria-hidden=\"true\"></i></a>\n    </div>\n    <!--<p style=\"color: #bfab43; text-align: center\">Nitesh Kumar Sharma</p>-->\n    <mat-nav-list>\n      <a mat-list-item routerLink=\"/\"><mat-icon>border_color</mat-icon>About</a>\n      <a mat-list-item routerLink=\"/skill-set\"><mat-icon>restaurant_menu</mat-icon>Skills</a>\n      <a mat-list-item routerLink=\"/exp\"><mat-icon>work</mat-icon>Experience</a>\n      <a mat-list-item routerLink=\"/edu\"><mat-icon>school</mat-icon>Education</a>\n      <a mat-list-item routerLink=\"/intr\"><mat-icon>style</mat-icon>Interests</a>\n      <a mat-list-item><mat-icon>beenhere</mat-icon>Certification</a>\n      <a mat-list-item><mat-icon>beenhere</mat-icon>Contact</a>\n    </mat-nav-list>\n    <footer style=\"padding-top: 3em; text-align:center; color: #e1f5ee;\">\n        <h5 style=\"font-weight: 4\">© 2018 Angular Developer</h5>\n    </footer>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <button\n        type=\"button\"\n        aria-label=\"Toggle sidenav\"\n        mat-icon-button\n        (click)=\"drawer.toggle()\"\n        *ngIf=\"isHandset$ | async\">\n        <mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>\n      </button>\n      <span style=\"cursor: pointer\" routerLink=\"/\"><mat-icon>home</mat-icon></span>\n      <span class=\"spacer\"></span>\n      <a routerLink=\"/\">About</a>\n      <a routerLink=\"/skill-set\">Skills</a>\n      <a routerLink=\"/exp\">Experience</a>\n      <a routerLink=\"/edu\">Education</a>\n      <a routerLink=\"/intr\">Interests</a>\n      <a >Certification</a>\n      <a >Contact</a>\n    </mat-toolbar>\n    <!-- Add Content Here -->\n    <mat-card>\n        <router-outlet>\n          \n        </router-outlet>\n    </mat-card>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n"
 
 /***/ }),
 
@@ -681,6 +833,73 @@ var HeaderComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_1__["BreakpointObserver"]])
     ], HeaderComponent);
     return HeaderComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/header/interest/interest.component.css":
+/*!********************************************************!*\
+  !*** ./src/app/header/interest/interest.component.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/header/interest/interest.component.html":
+/*!*********************************************************!*\
+  !*** ./src/app/header/interest/interest.component.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-card-header>\n    <mat-card-title>\n        <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>style</mat-icon> {{ matHeader }}</h1>\n    </mat-card-title>\n</mat-card-header>\n<mat-card-content>\n\n</mat-card-content>"
+
+/***/ }),
+
+/***/ "./src/app/header/interest/interest.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/header/interest/interest.component.ts ***!
+  \*******************************************************/
+/*! exports provided: InterestComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InterestComponent", function() { return InterestComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var InterestComponent = /** @class */ (function () {
+    function InterestComponent(breakpointObserver) {
+        this.breakpointObserver = breakpointObserver;
+        this.matHeader = 'Interests & Hobbies';
+    }
+    InterestComponent.prototype.ngOnInit = function () {
+    };
+    InterestComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-interest',
+            template: __webpack_require__(/*! ./interest.component.html */ "./src/app/header/interest/interest.component.html"),
+            styles: [__webpack_require__(/*! ./interest.component.css */ "./src/app/header/interest/interest.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_1__["BreakpointObserver"]])
+    ], InterestComponent);
+    return InterestComponent;
 }());
 
 

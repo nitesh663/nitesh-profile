@@ -1,0 +1,39 @@
+<mat-card-header [ngStyle]="{'text-align': 'center'}">
+  <mat-card-title>
+      <h1 style="color:#51456d;font-weight: 350"><mat-icon>school</mat-icon> {{ matHeader }}</h1>
+  </mat-card-title>
+</mat-card-header>
+<mat-card-content class="edu-card-content">
+  <div class="row">  
+    <div class="col-lg-12 col-md-12">
+      <div class="card">
+        <div class="card-header card-header-warning">
+          <h4 class="card-title">Computer Science And Engineering (B.Tech)</h4>
+          <p class="card-category">2012 - 2016</p>
+        </div>
+        <div class="card-body table-responsive">
+            <table class="table table-hover">
+                <thead class="text-default">
+                    <th>ID</th>
+                    <th>Examination Passed</th>
+                    <th>Board</th>
+                    <th>Institution</th>
+                    <th>Year of Passing</th>
+                    <th>Percentage (%)</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let edu of educat">
+                        <td>{{ edu.id }}</td>
+                        <td [innerHtml]="edu.examName"></td>
+                        <td>{{ edu.board }}</td>
+                        <td>{{ edu.instName }}</td>
+                        <td>{{ edu.yop }}</td>
+                        <td>{{ edu.percentage }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card-content>

@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { map } from 'rxjs/operators';
+
 import { Breakpoints, BreakpointState, BreakpointObserver } from '@angular/cdk/layout';
 import { fadeInAnimation } from '../../_animations/index';
+
 
 @Component({
   selector: 'app-header/about',

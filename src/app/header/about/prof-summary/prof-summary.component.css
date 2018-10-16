@@ -4,6 +4,10 @@ mgl-timeline-entry-dot{
     color: #fff !important;
   }
 
+  mgl-timeline-entry-dot {
+    padding-top: 5px;
+  }
+
   mgl-timeline-entry-header{
       cursor: pointer;
       font-weight: 200;

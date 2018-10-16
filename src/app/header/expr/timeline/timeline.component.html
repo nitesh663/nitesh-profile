@@ -1,11 +1,11 @@
-<div class="timeline" *ngFor="let exper of experiences">
-    <div class="container" [ngClass]="exper.alignItem">
-      <div class="content">
+<div class="cust-timeline" *ngFor="let exper of experiences">
+    <div class="exp-container" [ngClass]="exper.alignItem">
+      <div class="exp-content">
         <h2 style="font-weight: 400">{{ exper.desig }}</h2>
         <p><b>{{ exper.yrs }}</b></p>
         <p style="color: purple"><b>Company:</b> Software AG</p>
         <p style="text-align: justify; width: 100%">{{ exper.prof_desc }}</p>
       </div>
     </div>
-  </div>
+</div>
   

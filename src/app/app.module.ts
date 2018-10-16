@@ -10,11 +10,14 @@ import { HeaderComponent } from './header/header.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { AboutComponent } from './header/about/about.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AppBootstrapModule } from './bootstrap.custom-module';
 import { ExprComponent } from './header/expr/expr.component';
 import { MglTimelineModule } from 'angular-mgl-timeline';
 import { ProfSummaryComponent } from './header/about/prof-summary/prof-summary.component';
 import { SkillSetComponent } from './header/skill-set/skill-set.component';
 import { TimelineComponent } from './header/expr/timeline/timeline.component';
+import { EducatComponent } from './header/educat/educat.component';
+import { InterestComponent } from './header/interest/interest.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { TimelineComponent } from './header/expr/timeline/timeline.component';
     ExprComponent,
     ProfSummaryComponent,
     SkillSetComponent,
-    TimelineComponent
+    TimelineComponent,
+    EducatComponent,
+    InterestComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -34,6 +40,7 @@ import { TimelineComponent } from './header/expr/timeline/timeline.component';
     MaterialModule,
     LayoutModule,
     AppRoutingModule,
+    AppBootstrapModule,
     MglTimelineModule,
   ],
   providers: [],
