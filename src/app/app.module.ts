@@ -18,6 +18,8 @@ import { SkillSetComponent } from './header/skill-set/skill-set.component';
 import { TimelineComponent } from './header/expr/timeline/timeline.component';
 import { EducatComponent } from './header/educat/educat.component';
 import { InterestComponent } from './header/interest/interest.component';
+import { ContactComponent } from './header/contact/contact.component';
+import { ContactDetComponent } from './header/contact/contact-det/contact-det.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { InterestComponent } from './header/interest/interest.component';
     TimelineComponent,
     EducatComponent,
     InterestComponent,
+    ContactComponent,
+    ContactDetComponent,
 
   ],
   imports: [

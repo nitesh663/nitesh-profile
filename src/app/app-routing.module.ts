@@ -6,6 +6,7 @@ import { SkillSetComponent } from './header/skill-set/skill-set.component';
 import { ExprComponent } from './header/expr/expr.component';
 import { EducatComponent } from './header/educat/educat.component';
 import { InterestComponent } from './header/interest/interest.component';
+import { ContactComponent } from './header/contact/contact.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/about', pathMatch: 'full' },
@@ -13,7 +14,8 @@ const routes: Routes = [
     { path: 'skill-set', component: SkillSetComponent },
     { path: 'exp', component: ExprComponent },
     { path: 'edu', component: EducatComponent },
-    { path: 'intr', component: InterestComponent }
+    { path: 'intr', component: InterestComponent },
+    { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({

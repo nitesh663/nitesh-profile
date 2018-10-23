@@ -142,6 +142,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header_expr_expr_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./header/expr/expr.component */ "./src/app/header/expr/expr.component.ts");
 /* harmony import */ var _header_educat_educat_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./header/educat/educat.component */ "./src/app/header/educat/educat.component.ts");
 /* harmony import */ var _header_interest_interest_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./header/interest/interest.component */ "./src/app/header/interest/interest.component.ts");
+/* harmony import */ var _header_contact_contact_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./header/contact/contact.component */ "./src/app/header/contact/contact.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -155,13 +156,15 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var routes = [
     { path: '', redirectTo: '/about', pathMatch: 'full' },
     { path: 'about', component: _header_about_about_component__WEBPACK_IMPORTED_MODULE_2__["AboutComponent"] },
     { path: 'skill-set', component: _header_skill_set_skill_set_component__WEBPACK_IMPORTED_MODULE_3__["SkillSetComponent"] },
     { path: 'exp', component: _header_expr_expr_component__WEBPACK_IMPORTED_MODULE_4__["ExprComponent"] },
     { path: 'edu', component: _header_educat_educat_component__WEBPACK_IMPORTED_MODULE_5__["EducatComponent"] },
-    { path: 'intr', component: _header_interest_interest_component__WEBPACK_IMPORTED_MODULE_6__["InterestComponent"] }
+    { path: 'intr', component: _header_interest_interest_component__WEBPACK_IMPORTED_MODULE_6__["InterestComponent"] },
+    { path: 'contact', component: _header_contact_contact_component__WEBPACK_IMPORTED_MODULE_7__["ContactComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -265,12 +268,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header_expr_timeline_timeline_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./header/expr/timeline/timeline.component */ "./src/app/header/expr/timeline/timeline.component.ts");
 /* harmony import */ var _header_educat_educat_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./header/educat/educat.component */ "./src/app/header/educat/educat.component.ts");
 /* harmony import */ var _header_interest_interest_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./header/interest/interest.component */ "./src/app/header/interest/interest.component.ts");
+/* harmony import */ var _header_contact_contact_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./header/contact/contact.component */ "./src/app/header/contact/contact.component.ts");
+/* harmony import */ var _header_contact_contact_det_contact_det_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./header/contact/contact-det/contact-det.component */ "./src/app/header/contact/contact-det/contact-det.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -305,6 +312,8 @@ var AppModule = /** @class */ (function () {
                 _header_expr_timeline_timeline_component__WEBPACK_IMPORTED_MODULE_16__["TimelineComponent"],
                 _header_educat_educat_component__WEBPACK_IMPORTED_MODULE_17__["EducatComponent"],
                 _header_interest_interest_component__WEBPACK_IMPORTED_MODULE_18__["InterestComponent"],
+                _header_contact_contact_component__WEBPACK_IMPORTED_MODULE_19__["ContactComponent"],
+                _header_contact_contact_det_contact_det_component__WEBPACK_IMPORTED_MODULE_20__["ContactDetComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -393,7 +402,7 @@ module.exports = "\n.more-button {\n  position: absolute;\n  top: 5px;\n  right:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card-header>\r\n    <mat-card-title>\r\n        <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>perm_identity</mat-icon> {{ matHeader }}</h1>\r\n        <button mat-icon-button class=\"more-button\" [matMenuTriggerFor]=\"menu\" aria-label=\"Toggle menu\">\r\n        <mat-icon>more_vert</mat-icon>\r\n        </button>\r\n        <mat-menu #menu=\"matMenu\" xPosition=\"before\">\r\n        <button mat-menu-item>\r\n            <mat-icon>get_app</mat-icon>Download CV\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>mail</mat-icon><a [href]=\"mailText\">Mail Me</a>\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>call</mat-icon><a href=\"tel:8658269089\">Call Me</a>\r\n        </button>\r\n        </mat-menu>\r\n    </mat-card-title>\r\n</mat-card-header>\r\n<mat-card-content class=\"dashboard-card-content\">\r\n    <app-prof-summary></app-prof-summary>\r\n</mat-card-content>"
+module.exports = "<mat-card-header>\r\n    <mat-card-title>\r\n        <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>perm_identity</mat-icon> {{ matHeader }}</h1>\r\n        <button mat-icon-button class=\"more-button\" [matMenuTriggerFor]=\"menu\" aria-label=\"Toggle menu\">\r\n        <mat-icon>more_vert</mat-icon>\r\n        </button>\r\n        <mat-menu #menu=\"matMenu\" xPosition=\"before\">\r\n        <button mat-menu-item>\r\n            <mat-icon>get_app</mat-icon><a href=\"https://files.fm/down.php?i=8fhc2wg4&n=NiteshKumar_ExperienceResume.pdf\">Download CV</a>\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>mail</mat-icon><a [href]=\"mailText\">Mail Me</a>\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>call</mat-icon><a href=\"tel:8658269089\">Call Me</a>\r\n        </button>\r\n        </mat-menu>\r\n    </mat-card-title>\r\n</mat-card-header>\r\n<mat-card-content class=\"dashboard-card-content\">\r\n    <app-prof-summary></app-prof-summary>\r\n</mat-card-content>"
 
 /***/ }),
 
@@ -535,6 +544,136 @@ var ProfSummaryComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ProfSummaryComponent);
     return ProfSummaryComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/header/contact/contact-det/contact-det.component.css":
+/*!**********************************************************************!*\
+  !*** ./src/app/header/contact/contact-det/contact-det.component.css ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/header/contact/contact-det/contact-det.component.html":
+/*!***********************************************************************!*\
+  !*** ./src/app/header/contact/contact-det/contact-det.component.html ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  contact-det works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/header/contact/contact-det/contact-det.component.ts":
+/*!*********************************************************************!*\
+  !*** ./src/app/header/contact/contact-det/contact-det.component.ts ***!
+  \*********************************************************************/
+/*! exports provided: ContactDetComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactDetComponent", function() { return ContactDetComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ContactDetComponent = /** @class */ (function () {
+    function ContactDetComponent() {
+    }
+    ContactDetComponent.prototype.ngOnInit = function () {
+    };
+    ContactDetComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-contact-det',
+            template: __webpack_require__(/*! ./contact-det.component.html */ "./src/app/header/contact/contact-det/contact-det.component.html"),
+            styles: [__webpack_require__(/*! ./contact-det.component.css */ "./src/app/header/contact/contact-det/contact-det.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ContactDetComponent);
+    return ContactDetComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/header/contact/contact.component.css":
+/*!******************************************************!*\
+  !*** ./src/app/header/contact/contact.component.css ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "* {\r\n    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);\r\n    -webkit-tap-highlight-color: transparent;\r\n}\r\n\r\n*, *::before, *::after {\r\n    box-sizing: border-box;\r\n}\r\n\r\n.card-profile {\r\n    margin-top: 30px;\r\n    text-align: center;\r\n}\r\n\r\n.card {\r\n    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);\r\n}\r\n\r\n.card {\r\n    border: 0;\r\n    margin-bottom: 30px;\r\n    margin-top: 30px;\r\n    border-radius: 6px;\r\n    color: #333333;\r\n    background: #fff;\r\n    width: 100%;\r\n    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);\r\n}\r\n\r\n.card {\r\n    position: relative;\r\n    display: flex;\r\n    flex-direction: column;\r\n    min-width: 0;\r\n    word-wrap: break-word;\r\n    background-color: #fff;\r\n    background-clip: border-box;\r\n    border: 1px solid #eeeeee;\r\n    border-radius: 0.25rem;\r\n}\r\n\r\n.card {\r\n    font-size: .875rem;\r\n}\r\n\r\n.card-profile .card-avatar {\r\n    max-width: 130px;\r\n    max-height: 130px;\r\n}\r\n\r\n.card-profile .card-avatar {\r\n    margin: -50px auto 0;\r\n    border-radius: 50%;\r\n    overflow: hidden;\r\n    padding: 0;\r\n    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);\r\n}\r\n\r\n.card-profile .card-avatar + .card-body {\r\n    margin-top: 15px;\r\n}\r\n\r\n.card .card-body {\r\n    padding: 0.9375rem 20px;\r\n    position: relative;\r\n}\r\n\r\n.card .card-body, .card .card-footer {\r\n    padding: 0.9375rem 1.875rem;\r\n}\r\n\r\n.card-body {\r\n    flex: 1 1 auto;\r\n    padding: 1.25rem;\r\n}\r\n\r\n.card [class*=\"card-header-\"]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) {\r\n    border-radius: 3px;\r\n    margin-top: -20px;\r\n    padding: 15px;\r\n}\r\n\r\n.card .card-header-danger .card-icon, .card .card-header-danger:not(.card-header-icon):not(.card-header-text), .card .card-header-danger .card-text {\r\n    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(244, 67, 54, 0.4);\r\n}\r\n\r\n.card .card-header-danger .card-icon, .card .card-header-danger .card-text, .card .card-header-danger:not(.card-header-icon):not(.card-header-text), .card.bg-danger, .card.card-rotate.bg-danger .front, .card.card-rotate.bg-danger .back {\r\n    /* background: linear-gradient(60deg, #ef5350, #e53935); */\r\n    background:  #51456d;\r\n}\r\n\r\n.card [class*=\"card-header-\"] {\r\n    margin: 0px 15px 0;\r\n    padding: 0;\r\n    position: relative;\r\n}\r\n\r\n.card .card-header {\r\n    z-index: 3 !important;\r\n}\r\n\r\n.card [class*=\"card-header-\"], .card[class*=\"bg-\"] {\r\n    color: #fff;\r\n}\r\n\r\n.card .card-header {\r\n    border-bottom: none;\r\n    background: transparent;\r\n}\r\n\r\n.card-header:first-child {\r\n    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;\r\n}\r\n\r\n.card-header {\r\n    padding: 0.75rem 1.25rem;\r\n    margin-bottom: 0;\r\n    background-color: #fff;\r\n    border-bottom: 1px solid #eeeeee;\r\n}\r\n\r\n.card-title{\r\n    font-weight: 250;\r\n}\r\n\r\n.card-body .row{\r\n    background: #cfd8dc;\r\n}\r\n\r\n@media (min-width: 768px){\r\n.col-md-4 {\r\n    flex: 0 0 33.33333333%;\r\n    max-width: 30.33333333%;\r\n }\r\n}\r\n\r\n@media (min-width: 768px){\r\n.col-md-8 {\r\n    flex: 0 0 66.66666667%;\r\n    max-width: 66.66666667%;\r\n }\r\n}\r\n\r\n.icons8-webhook {\r\n    display: inline-block;\r\n    width: 120px;\r\n    height: 120px;\r\n    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICAgIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIKICAgICB2aWV3Qm94PSIwIDAgNDggNDgiCiAgICAgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDggNDg7O2ZpbGw6IzhlNDRhZDsiPjxnIGlkPSJzdXJmYWNlMSI+CTxwYXRoIHN0eWxlPSJmaWxsOiMzNzQ3NEY7IiBkPSJNMzUsMzdjLTIuMiwwLTQtMS44LTQtNHMxLjgtNCw0LTRzNCwxLjgsNCw0UzM3LjIsMzcsMzUsMzd6Ij48L3BhdGg+CTxwYXRoIHN0eWxlPSJmaWxsOiMzNzQ3NEY7IiBkPSJNMzUsNDNjLTMsMC01LjktMS40LTcuOC0zLjdsMy4xLTIuNWMxLjEsMS40LDIuOSwyLjMsNC43LDIuM2MzLjMsMCw2LTIuNyw2LTZzLTIuNy02LTYtNiAgIGMtMSwwLTIsMC4zLTIuOSwwLjdsLTEuNywxTDIzLjMsMTZsMy41LTEuOWw1LjMsOS40YzEtMC4zLDItMC41LDMtMC41YzUuNSwwLDEwLDQuNSwxMCwxMFM0MC41LDQzLDM1LDQzeiI+PC9wYXRoPgk8cGF0aCBzdHlsZT0iZmlsbDojMzc0NzRGOyIgZD0iTTE0LDQzQzguNSw0Myw0LDM4LjUsNCwzM2MwLTQuNiwzLjEtOC41LDcuNS05LjdsMSwzLjlDOS45LDI3LjksOCwzMC4zLDgsMzNjMCwzLjMsMi43LDYsNiw2ICAgczYtMi43LDYtNnYtMmgxNXY0SDIzLjhDMjIuOSwzOS42LDE4LjgsNDMsMTQsNDN6Ij48L3BhdGg+CTxwYXRoIHN0eWxlPSJmaWxsOiNFOTFFNjM7IiBkPSJNMTQsMzdjLTIuMiwwLTQtMS44LTQtNHMxLjgtNCw0LTRzNCwxLjgsNCw0UzE2LjIsMzcsMTQsMzd6Ij48L3BhdGg+CTxwYXRoIHN0eWxlPSJmaWxsOiMzNzQ3NEY7IiBkPSJNMjUsMTljLTIuMiwwLTQtMS44LTQtNHMxLjgtNCw0LTRzNCwxLjgsNCw0UzI3LjIsMTksMjUsMTl6Ij48L3BhdGg+CTxwYXRoIHN0eWxlPSJmaWxsOiNFOTFFNjM7IiBkPSJNMTUuNywzNEwxMi4zLDMybDUuOS05LjdjLTItMS45LTMuMi00LjUtMy4yLTcuM2MwLTUuNSw0LjUtMTAsMTAtMTBjNS41LDAsMTAsNC41LDEwLDEwICAgYzAsMC45LTAuMSwxLjctMC4zLDIuNWwtMy45LTFjMC4xLTAuNSwwLjItMSwwLjItMS41YzAtMy4zLTIuNy02LTYtNnMtNiwyLjctNiw2YzAsMi4xLDEuMSw0LDIuOSw1LjFsMS43LDFMMTUuNywzNHoiPjwvcGF0aD48L2c+PC9zdmc+') 50% 50% no-repeat;\r\n    background-size: 100%;\r\n  }\r\n\r\n.dashboard-card-content{\r\n      margin-top: 30px;\r\n  }"
+
+/***/ }),
+
+/***/ "./src/app/header/contact/contact.component.html":
+/*!*******************************************************!*\
+  !*** ./src/app/header/contact/contact.component.html ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-card-header>\n  <mat-card-title>\n      <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>contacts</mat-icon> {{ matHeader }}</h1>\n  </mat-card-title>\n</mat-card-header>\n<mat-card-content class=\"dashboard-card-content\">\n  <div class=\"row\">\n    <div class=\"col-md-4\">\n      <div class=\"card card-profile\">\n        <div class=\"card-avatar\">\n            <a href=\"#pablo\">\n                <!-- <img class=\"img\" src=\"https://i.postimg.cc/0bhMjx45/nit.jpg\" /> -->\n                <div class=\"icons8-webhook\"></div>\n            </a>\n        </div>\n        <div class=\"card-body\">\n            <h6 class=\"card-category text-gray\">Full Stack Web Developer</h6>\n            <h4 class=\"card-title\">Nitesh Kumar Sharma</h4>\n            <p class=\"card-description\">\n                Always Ready to grab the oppertunity.\n            </p>\n            <a href=\"#pablo\" class=\"btn btn-danger btn-round\">Follow</a>\n        </div>\n      </div>\n    </div>\n    <div class=\"col-md-8\">\n        <div class=\"card\" style=\"background:#fff\">\n            <div class=\"card-header card-header-danger\">\n                <h4 class=\"card-title\">Contact Details</h4>\n                <p class=\"card-category\">Fill Free To Contact Me</p>\n            </div>\n            <div class=\"card-body\">\n              <div class=\"row\">\n                <div class=\"col-md-4\">\n                    <img src=\"https://png.icons8.com/cotton/60/8e44ad/marker.png\">\n                </div>\n                <div class=\"col-md-8\">\n                    <h4 class=\"card-title\">LOCATION</h4>\n                    <p class=\"card-category\">SGR Dental College,Marathalli,Bangalore-560037</p>\n                </div>\n              </div>\n              <div class=\"row\" style=\"background:#dedfe6\">\n                <div class=\"col-md-4\">\n                    <img src=\"https://png.icons8.com/color/60/8e44ad/secured-letter.png\">\n                </div>\n                <div class=\"col-md-8\">\n                    <h4 class=\"card-title\">E-MAIL</h4>\n                    <p class=\"card-category\">niteshsharma663@gmail.com</p>\n                </div>\n              </div>\n              <div class=\"row\">\n                <div class=\"col-md-4\">\n                    <img src=\"https://png.icons8.com/cotton/60/8e44ad/clock.png\">\n                </div>\n                <div class=\"col-md-8\">\n                    <h4 class=\"card-title\">WORK HOURS</h4>\n                    <p class=\"card-category\">Mon. - frie. 9AM - 21PM</p>\n                </div>\n              </div>\n              <div class=\"row\" style=\"background:#dedfe6\">\n                <div class=\"col-md-4\">\n                    <img src=\"https://png.icons8.com/cotton/60/8e44ad/phonelink-ring.png\">\n                </div>\n                <div class=\"col-md-8\">\n                    <h4 class=\"card-title\">PHONE</h4>\n                    <p class=\"card-category\">+91 8658269089</p>\n                </div>\n              </div>\n            </div>\n        </div>\n    </div> \n  </div>  \n</mat-card-content>\n  "
+
+/***/ }),
+
+/***/ "./src/app/header/contact/contact.component.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/header/contact/contact.component.ts ***!
+  \*****************************************************/
+/*! exports provided: ContactComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactComponent", function() { return ContactComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm5/layout.es5.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ContactComponent = /** @class */ (function () {
+    function ContactComponent(breakpointObserver) {
+        this.breakpointObserver = breakpointObserver;
+        this.matHeader = 'Contact';
+    }
+    ContactComponent.prototype.ngOnInit = function () {
+    };
+    ContactComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-contact',
+            template: __webpack_require__(/*! ./contact.component.html */ "./src/app/header/contact/contact.component.html"),
+            styles: [__webpack_require__(/*! ./contact.component.css */ "./src/app/header/contact/contact.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_1__["BreakpointObserver"]])
+    ], ContactComponent);
+    return ContactComponent;
 }());
 
 
@@ -788,7 +927,7 @@ module.exports = "/*****************************\n  sidenav content goes below\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n    <mat-sidenav\n    #drawer\n    class=\"sidenav\"\n    fixedInViewport=\"true\"\n    [attr.role]=\"(isHandset$ | async) ? 'dialog' : 'navigation'\"\n    [mode]=\"(isHandset$ | async) ? 'over' : 'side'\"\n    [opened]=\"!(isHandset$ | async)\">\n    <mat-toolbar color=\"primary\">Nitesh Kumar Sharma</mat-toolbar>\n    \n    <img src=\"https://i.postimg.cc/0bhMjx45/nit.jpg\"><br/>\n    <div class=\"social-icon\">\n      <a href=\"https://www.linkedin.com/in/nitesh-sharma-7194195b/\" target=\"_blank\"><i class=\"fa fa-linkedin fa-lg\" matTooltip=\"linkedin\" matTooltipClass=\"custom-tooltip-black\" aria-hidden=\"true\"></i></a>\n      <a href=\"https://github.com/nitesh663/DAILY/\" target=\"_blank\"><i class=\"fa fa-github fa-lg\" matTooltip=\"github\" aria-hidden=\"true\"></i></a>\n      <a href=\"https://www.facebook.com/niteshdsuperboy\" target=\"_blank\"><i class=\"fa fa-facebook fa-lg\" matTooltip=\"facebook\" aria-hidden=\"true\"></i></a>\n      <a href=\"https://twitter.com/nitesh663\" target=\"_blank\"><i class=\"fa fa-twitter fa-lg\" matTooltip=\"twitter\" aria-hidden=\"true\"></i></a>\n    </div>\n    <!--<p style=\"color: #bfab43; text-align: center\">Nitesh Kumar Sharma</p>-->\n    <mat-nav-list>\n      <a mat-list-item routerLink=\"/\"><mat-icon>border_color</mat-icon>About</a>\n      <a mat-list-item routerLink=\"/skill-set\"><mat-icon>restaurant_menu</mat-icon>Skills</a>\n      <a mat-list-item routerLink=\"/exp\"><mat-icon>work</mat-icon>Experience</a>\n      <a mat-list-item routerLink=\"/edu\"><mat-icon>school</mat-icon>Education</a>\n      <a mat-list-item routerLink=\"/intr\"><mat-icon>style</mat-icon>Interests</a>\n      <a mat-list-item><mat-icon>beenhere</mat-icon>Certification</a>\n      <a mat-list-item><mat-icon>beenhere</mat-icon>Contact</a>\n    </mat-nav-list>\n    <footer style=\"padding-top: 3em; text-align:center; color: #e1f5ee;\">\n        <h5 style=\"font-weight: 4\">© 2018 Angular Developer</h5>\n    </footer>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <button\n        type=\"button\"\n        aria-label=\"Toggle sidenav\"\n        mat-icon-button\n        (click)=\"drawer.toggle()\"\n        *ngIf=\"isHandset$ | async\">\n        <mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>\n      </button>\n      <span style=\"cursor: pointer\" routerLink=\"/\"><mat-icon>home</mat-icon></span>\n      <span class=\"spacer\"></span>\n      <a routerLink=\"/\">About</a>\n      <a routerLink=\"/skill-set\">Skills</a>\n      <a routerLink=\"/exp\">Experience</a>\n      <a routerLink=\"/edu\">Education</a>\n      <a routerLink=\"/intr\">Interests</a>\n      <a >Certification</a>\n      <a >Contact</a>\n    </mat-toolbar>\n    <!-- Add Content Here -->\n    <mat-card>\n        <router-outlet>\n          \n        </router-outlet>\n    </mat-card>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n"
+module.exports = "<mat-sidenav-container class=\"sidenav-container\">\n    <mat-sidenav\n    #drawer\n    class=\"sidenav\"\n    fixedInViewport=\"true\"\n    [attr.role]=\"(isHandset$ | async) ? 'dialog' : 'navigation'\"\n    [mode]=\"(isHandset$ | async) ? 'over' : 'side'\"\n    [opened]=\"!(isHandset$ | async)\">\n    <mat-toolbar color=\"primary\">Nitesh Kumar Sharma</mat-toolbar>\n    \n    <img src=\"https://i.postimg.cc/0bhMjx45/nit.jpg\"><br/>\n    <div class=\"social-icon\">\n      <a href=\"https://www.linkedin.com/in/nitesh-sharma-7194195b/\" target=\"_blank\"><i class=\"fa fa-linkedin fa-lg\" matTooltip=\"linkedin\" matTooltipClass=\"custom-tooltip-black\" aria-hidden=\"true\"></i></a>\n      <a href=\"https://github.com/nitesh663/DAILY/\" target=\"_blank\"><i class=\"fa fa-github fa-lg\" matTooltip=\"github\" aria-hidden=\"true\"></i></a>\n      <a href=\"https://www.facebook.com/niteshdsuperboy\" target=\"_blank\"><i class=\"fa fa-facebook fa-lg\" matTooltip=\"facebook\" aria-hidden=\"true\"></i></a>\n      <a href=\"https://twitter.com/nitesh663\" target=\"_blank\"><i class=\"fa fa-twitter fa-lg\" matTooltip=\"twitter\" aria-hidden=\"true\"></i></a>\n    </div>\n    <!--<p style=\"color: #bfab43; text-align: center\">Nitesh Kumar Sharma</p>-->\n    <mat-nav-list>\n      <a mat-list-item routerLink=\"/\"><mat-icon>border_color</mat-icon>About</a>\n      <a mat-list-item routerLink=\"/skill-set\"><mat-icon>restaurant_menu</mat-icon>Skills</a>\n      <a mat-list-item routerLink=\"/exp\"><mat-icon>work</mat-icon>Experience</a>\n      <a mat-list-item routerLink=\"/edu\"><mat-icon>school</mat-icon>Education</a>\n      <!-- <a mat-list-item routerLink=\"/intr\"><mat-icon>style</mat-icon>Interests</a>\n      <a mat-list-item><mat-icon>beenhere</mat-icon>Certification</a> -->\n      <a mat-list-item routerLink=\"/contact\"><mat-icon>contacts</mat-icon>Contact</a>\n    </mat-nav-list>\n    <footer style=\"padding-top: 3em; text-align:center; color: #e1f5ee;\">\n        <h5 style=\"font-weight: 4\">© 2018 Angular Developer</h5>\n    </footer>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <button\n        type=\"button\"\n        aria-label=\"Toggle sidenav\"\n        mat-icon-button\n        (click)=\"drawer.toggle()\"\n        *ngIf=\"isHandset$ | async\">\n        <mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>\n      </button>\n      <span style=\"cursor: pointer\" routerLink=\"/\"><mat-icon>home</mat-icon></span>\n      <span class=\"spacer\"></span>\n      <a routerLink=\"/\">About</a>\n      <a routerLink=\"/skill-set\">Skills</a>\n      <a routerLink=\"/exp\">Experience</a>\n      <a routerLink=\"/edu\">Education</a>\n      <!-- <a routerLink=\"/intr\">Interests</a>\n      <a >Certification</a> -->\n      <a routerLink=\"/contact\">Contact</a>\n    </mat-toolbar>\n    <!-- Add Content Here -->\n    <mat-card>\n        <router-outlet>\n          \n        </router-outlet>\n    </mat-card>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n"
 
 /***/ }),
 
@@ -857,7 +996,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card-header>\n    <mat-card-title>\n        <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>style</mat-icon> {{ matHeader }}</h1>\n    </mat-card-title>\n</mat-card-header>\n<mat-card-content>\n\n</mat-card-content>"
+module.exports = "<mat-card-header>\n    <mat-card-title>\n        <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>style</mat-icon> {{ matHeader }}</h1>\n    </mat-card-title>\n</mat-card-header>\n<mat-card-content class=\"dashboard-card-content\">\n    \n</mat-card-content>"
 
 /***/ }),
 
