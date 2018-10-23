@@ -813,7 +813,7 @@ module.exports = "\n.more-button {\n  position: absolute;\n  top: 5px;\n  right:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card-header>\n    <mat-card-title>\n        <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>work</mat-icon> {{ matHeader }}</h1>\n        <button mat-icon-button class=\"more-button\" [matMenuTriggerFor]=\"menu\" aria-label=\"Toggle menu\">\n        <mat-icon>more_vert</mat-icon>\n        </button>\n        <mat-menu #menu=\"matMenu\" xPosition=\"before\">\n        <button mat-menu-item>\n            <mat-icon>get_app</mat-icon>Download CV\n        </button>\n        <button mat-menu-item>\n            <mat-icon>mail</mat-icon><a [href]=\"mailText\">Mail Me</a>\n        </button>\n        <button mat-menu-item>\n            <mat-icon>call</mat-icon>Call Me\n        </button>\n        </mat-menu>\n    </mat-card-title>\n</mat-card-header>\n<mat-card-content class=\"dashboard-card-content\">\n    <app-timeline></app-timeline>\n</mat-card-content>\n    "
+module.exports = "<mat-card-header>\n    <mat-card-title>\n        <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>work</mat-icon> {{ matHeader }}</h1>\n    </mat-card-title>\n</mat-card-header>\n<mat-card-content class=\"dashboard-card-content\">\n    <app-timeline></app-timeline>\n</mat-card-content>"
 
 /***/ }),
 
