@@ -1,3 +1,71 @@
-<p>
-  contact-det works!
-</p>
+<div class="row">
+<div class="col-md-4">
+    <div class="card card-profile">
+      <div class="card-avatar">
+          <a>
+              <!-- <img class="img" src="https://i.postimg.cc/0bhMjx45/nit.jpg" /> -->
+              <div class="icons8-webhook"></div>
+          </a>
+      </div>
+      <div class="card-body">
+        <h6 class="card-category text-gray">Full Stack Web Developer</h6>
+        <h4 class="card-title">Nitesh Kumar Sharma</h4>
+        <p class="card-description">
+            Always Ready To Grab The Opportunity.
+        </p>
+        <!-- <a href="" class="btn btn-danger btn-round">Follow</a> -->
+        <a *ngFor="let item of starList; let i=index " (click)="setStar(i)">  
+            <i class="fa" [ngClass]="{'fa-star-o':item,'fa-star':!item}"></i>
+        </a>
+        <br>  
+        <!-- Rating :- {{rating}} stars   -->
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8">
+      <div class="card" style="background:#fff">
+          <div class="card-header card-header-danger">
+              <h4 class="card-title">Contact Details</h4>
+              <p class="card-category">Fill Free To Contact Me</p>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                  <img src="https://png.icons8.com/cotton/60/8e44ad/marker.png">
+              </div>
+              <div class="col-md-8">
+                  <h4 class="card-title">LOCATION</h4>
+                  <p class="card-category">SGR Dental College,Marathalli,Bangalore-560037</p>
+              </div>
+            </div>
+            <div class="row" style="background:#dedfe6">
+              <div class="col-md-4">
+                  <img src="https://png.icons8.com/color/60/8e44ad/secured-letter.png">
+              </div>
+              <div class="col-md-8">
+                  <h4 class="card-title">E-MAIL</h4>
+                  <p class="card-category">niteshsharma663@gmail.com</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                  <img src="https://png.icons8.com/cotton/60/8e44ad/clock.png">
+              </div>
+              <div class="col-md-8">
+                  <h4 class="card-title">WORK HOURS</h4>
+                  <p class="card-category">Mon. - frie. 9AM - 21PM</p>
+              </div>
+            </div>
+            <div class="row" style="background:#dedfe6">
+              <div class="col-md-4">
+                  <img src="https://png.icons8.com/cotton/60/8e44ad/phonelink-ring.png">
+              </div>
+              <div class="col-md-8">
+                  <h4 class="card-title">PHONE</h4>
+                  <p class="card-category">+91 8658269089</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div> 
+</div>

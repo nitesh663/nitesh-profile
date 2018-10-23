@@ -36,6 +36,7 @@
     "path": "^0.12.7",
     "react-vertical-timeline-component": "^2.3.1",
     "rxjs": "^6.0.0",
+    "web-animations-js": "^2.3.1",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

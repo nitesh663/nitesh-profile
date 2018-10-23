@@ -1,9 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Breakpoints, BreakpointState, BreakpointObserver } from '@angular/cdk/layout';
+import { fadeInAnimation } from '../../_animations/index';
+
 @Component({
   selector: 'app-educat',
   templateUrl: './educat.component.html',
-  styleUrls: ['./educat.component.css']
+  styleUrls: ['./educat.component.css'],
+  animations: [fadeInAnimation],
+  host: { '[@fadeInAnimation]': '' }
 })
 export class EducatComponent implements OnInit {
   matHeader = 'Academic Profile';
@@ -33,7 +38,8 @@ export class EducatComponent implements OnInit {
       percentage: 75.16
     }
   ];
-  constructor() { }
+  
+  constructor(private breakpointObserver: BreakpointObserver) { }
 
   ngOnInit() {
   }

@@ -20,5 +20,5 @@ export class AboutComponent {
   ngOnInit(){
     this.mailText = "mailto:niteshsharma663@gmail.com";
   }
-
+  
 }

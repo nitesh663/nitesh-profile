@@ -1,6 +1,13 @@
-
 .more-button {
   position: absolute;
   top: 5px;
   right: 10px;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
 }

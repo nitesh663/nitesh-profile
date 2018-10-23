@@ -22,7 +22,7 @@ export class ProfSummaryComponent implements OnInit {
     },
     {
       header: 'Back End Developer',
-      content: 'Experiencing 1.3+ yr in designing, developing, and managing complex rest full web services by using Spring Boot, Core Java and MySQL.Building projects with maven.Some amount of work done on mongoDB.',
+      content: 'Experiencing 1.3+ yr in designing, developing, and managing complex rest full web services by using Spring Boot, Core Java and MySQL.Building projects with maven.Very good understanding of mongoDB and it\'s usability.',
       entrydot: '<p>&nbsp;&nbsp;&nbsp;1.3+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr</p>'
     },
     {
