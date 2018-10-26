@@ -507,24 +507,29 @@ var ProfSummaryComponent = /** @class */ (function () {
         this.expandEnabled = true;
         this.entries = [
             {
-                header: 'Front End Developer',
-                content: 'Creative Front-end Developer with 1.6+ years of experience leveraging Angular 2/4/5/6 and JavaScript to build responsive websites with dynamic components and interactive features that drive business growth and improve UX. Extensively Worked on HTML5, CSS3, JQuery, Bootstrap, Angular Material in development of webmethods UI.',
+                header: 'Total Experience',
+                content: 'Continuing with Software AG From April 5th 2017 having 1.6+ yr of experience till now.',
                 entrydot: '<p>&nbsp;&nbsp;&nbsp;1.6+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr</p>'
             },
             {
+                header: 'Front End Developer',
+                content: 'Creative Front-end Developer with 1.5+ years of experience leveraging Angular 2/4/5/6 and JavaScript to build responsive websites with dynamic components and interactive features that drive business growth and improve UX. Extensively Worked on HTML5, CSS3, JQuery, Bootstrap, Angular Material in development of webmethods UI.',
+                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.5+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr</p>'
+            },
+            {
                 header: 'Back End Developer',
-                content: 'Experiencing 1.3+ yr in designing, developing, and managing complex rest full web services by using Spring Boot, Core Java and MySQL.Building projects with maven.Very good understanding of mongoDB and it\'s usability.',
-                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.3+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr</p>'
+                content: 'Experiencing 1.0+ yr in designing, developing, and managing complex rest full web services by using Spring Boot, Core Java and MySQL.Building projects with maven.Very good understanding of mongoDB and it\'s usability.',
+                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.0+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr</p>'
             },
             {
                 header: 'WebMethods Developer',
-                content: 'Having 1.6+ yr of experience in this product and creating dynamic web apps in angular for it.It\'s a pure java based multiplatform enterprise integration product which is bascially used by developer to build and test enterprise service flow.',
-                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.6+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr'
+                content: 'Having 1.3+ yr of experience in this product and creating multiple services for integration flow, testing, debugging, unit testing, ui development.',
+                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.3+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr'
             },
             {
                 header: 'Agile Test Automation',
-                content: 'With 0.6+ yr of experience in agile automation with jenkins,junit,cnl.Well experience in writing junit tests for webMethods product, creating jenkins jobs and promoting builds.Very good knowledge in product build suitint promotions.',
-                entrydot: '<p>&nbsp;&nbsp;&nbsp;0.6+<br>&nbsp;&nbsp;&nbsp;&nbsp;Yr'
+                content: 'With 0.3+ yr of experience in agile automation with jenkins,junit,cnl.Well experience in writing junit tests for webMethods product, creating jenkins jobs and promoting builds.Very good knowledge in product build suitint promotions.',
+                entrydot: '<p>&nbsp;&nbsp;&nbsp;0.3+<br>&nbsp;&nbsp;&nbsp;&nbsp;Yr'
             },
         ];
     }
@@ -916,9 +921,10 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var TimelineComponent = /** @class */ (function () {
     function TimelineComponent() {
         this.experiences = [
-            { alignItem: 'exp-left', desig: 'Angular Developer', yrs: 'Aug 2017 - Oct 2018', prof_desc: 'Developing API for WebMethods Integration Platform so that users can dragAndDrop different services.It will keep tracking of tree like structure folder within packages.Used Angular 2-6, Html5, CSS3, Javascript.' },
+            { alignItem: 'exp-left', desig: 'Angular Developer', yrs: 'June 2017 - Oct 2018', prof_desc: 'Developing API for WebMethods Integration Platform so that users can dragAndDrop different services.It will keep tracking of tree like structure folder within packages.Used Angular 2-6, Html5, CSS3, Javascript.' },
             { alignItem: 'exp-right', desig: 'Spring Boot Developer', yrs: 'Oct 2017 - Oct 2018', prof_desc: 'Designing, developing, and managing complex rest full web services using Spring Boot, Core Java and MySQL.Worked on WebMethods Integration Platform to provide access to rest full web services.' },
-            { alignItem: 'exp-left', desig: 'Testing', yrs: 'Apr 2017 - Jul 2018', prof_desc: 'Creating jenkins jobs for product CNl, written test set for WebMethods Service Development in Junits. Testing products in environment like Linux(susse,redhat)/Mac/Windows. Correcting existing QFT test suite. Excellence in worked with agile methodology.' },
+            { alignItem: 'exp-left', desig: 'WebMethods Developer', yrs: 'Aug 2017 - Oct 2018', prof_desc: 'Designing, Developing, Implementation and troubleshooting of applications. Managing large and complex projects or multiple components with smooth implementation and testing of application. Creating packages for product flow using existing services for functional use.' },
+            { alignItem: 'exp-right', desig: 'Testing', yrs: 'Apr 2017 - Jul 2018', prof_desc: 'Creating jenkins jobs for product CNl, written test set for WebMethods Service Development in Junits. Testing products in environment like Linux(susse,redhat)/ Mac/ Windows. Correcting existing QFT test suite. Excellence in worked with agile methodology.' },
         ];
     }
     TimelineComponent.prototype.ngOnInit = function () {
