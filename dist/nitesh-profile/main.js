@@ -200,7 +200,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-header>\r\n        <router-outlet></router-outlet>\r\n</app-header>\r\n"
+module.exports = "<app-header>\r\n    <router-outlet></router-outlet>\r\n</app-header>\r\n"
 
 /***/ }),
 
@@ -402,7 +402,7 @@ module.exports = ".more-button {\n  position: absolute;\n  top: 5px;\n  right: 1
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card-header>\r\n    <mat-card-title>\r\n        <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>perm_identity</mat-icon> {{ matHeader }}</h1>\r\n        <button mat-icon-button class=\"more-button\" [matMenuTriggerFor]=\"menu\" aria-label=\"Toggle menu\">\r\n        <mat-icon>more_vert</mat-icon>\r\n        </button>\r\n        <mat-menu #menu=\"matMenu\" xPosition=\"before\">\r\n        <button mat-menu-item>\r\n            <mat-icon>get_app</mat-icon><a style=\"color: #51456d\" href=\"https://files.fm/down.php?i=8fhc2wg4&n=NiteshKumar_ExperienceResume.pdf\">Download CV</a>\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>mail</mat-icon><a style=\"color: #51456d\" [href]=\"mailText\">Mail Me</a>\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>call</mat-icon><a style=\"color: #51456d\" href=\"tel:8658269089\">Call Me</a>\r\n        </button>\r\n        </mat-menu>\r\n    </mat-card-title>\r\n</mat-card-header>\r\n<mat-card-content class=\"dashboard-card-content\">\r\n    <app-prof-summary></app-prof-summary>\r\n</mat-card-content>"
+module.exports = "<mat-card-header>\r\n    <mat-card-title>\r\n        <h1 style=\"color:#51456d;font-weight: 350\"><mat-icon>perm_identity</mat-icon> {{ matHeader }}</h1>\r\n        <button mat-icon-button class=\"more-button\" [matMenuTriggerFor]=\"menu\" aria-label=\"Toggle menu\">\r\n        <mat-icon>more_vert</mat-icon>\r\n        </button>\r\n        <mat-menu #menu=\"matMenu\" xPosition=\"before\">\r\n        <button mat-menu-item>\r\n            <mat-icon>get_app</mat-icon><a style=\"color: #51456d\" href=\"https://files.fm/down.php?i=rs6rsbkx&n=NiteshKumar_Exp_With_1.7Yr.pdf\">Download CV</a>\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>mail</mat-icon><a style=\"color: #51456d\" [href]=\"mailText\">Mail Me</a>\r\n        </button>\r\n        <button mat-menu-item>\r\n            <mat-icon>call</mat-icon><a style=\"color: #51456d\" href=\"tel:8658269089\">Call Me</a>\r\n        </button>\r\n        </mat-menu>\r\n    </mat-card-title>\r\n</mat-card-header>\r\n<mat-card-content class=\"dashboard-card-content\">\r\n    <app-prof-summary></app-prof-summary>\r\n</mat-card-content>"
 
 /***/ }),
 
@@ -509,18 +509,18 @@ var ProfSummaryComponent = /** @class */ (function () {
             {
                 header: 'Total Experience',
                 content: 'Continuing with Software AG From April 5th 2017 having 1.6+ yr of experience till now.',
-                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.6+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr</p>'
+                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.8+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr</p>'
             },
             {
                 header: 'Front End Developer',
-                content: 'Creative Front-end Developer with 1.5+ years of experience leveraging Angular 2/4/5/6 and JavaScript to build responsive websites with dynamic components and interactive features that drive business growth and improve UX. Extensively Worked on HTML5, CSS3, JQuery, Bootstrap, Angular Material in development of webmethods UI.',
-                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.5+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr</p>'
+                content: 'Creative Front-end Developer with 1.6+ years of experience leveraging Angular 2/4/5/6 and JavaScript to build responsive websites with dynamic components and interactive features that drive business growth and improve UX. Extensively Worked on HTML5, CSS3, JQuery, Bootstrap, Angular Material in development of webmethods UI.',
+                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.6+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr</p>'
             },
-            {
-                header: 'Back End Developer',
-                content: 'Experiencing 1.0+ yr in designing, developing, and managing complex rest full web services by using Spring Boot, Core Java and MySQL.Building projects with maven.Very good understanding of mongoDB and it\'s usability.',
-                entrydot: '<p>&nbsp;&nbsp;&nbsp;1.0+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr</p>'
-            },
+            /*{
+              header: 'Back End Developer',
+              content: 'Experiencing 1.0+ yr in designing, developing, and managing complex rest full web services by using Spring Boot, Core Java and MySQL.Building projects with maven.Very good understanding of mongoDB and it\'s usability.',
+              entrydot: '<p>&nbsp;&nbsp;&nbsp;1.0+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yr</p>'
+            },*/
             {
                 header: 'WebMethods Developer',
                 content: 'Having 1.3+ yr of experience in this product and creating multiple services for integration flow, testing, debugging, unit testing, ui development.',
@@ -921,10 +921,10 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var TimelineComponent = /** @class */ (function () {
     function TimelineComponent() {
         this.experiences = [
-            { alignItem: 'exp-left', desig: 'Angular Developer', yrs: 'June 2017 - Oct 2018', prof_desc: 'Developing API for WebMethods Integration Platform so that users can dragAndDrop different services.It will keep tracking of tree like structure folder within packages.Used Angular 2-6, Html5, CSS3, Javascript.' },
-            { alignItem: 'exp-right', desig: 'Spring Boot Developer', yrs: 'Oct 2017 - Oct 2018', prof_desc: 'Designing, developing, and managing complex rest full web services using Spring Boot, Core Java and MySQL.Worked on WebMethods Integration Platform to provide access to rest full web services.' },
-            { alignItem: 'exp-left', desig: 'WebMethods Developer', yrs: 'Aug 2017 - Oct 2018', prof_desc: 'Designing, Developing, Implementation and troubleshooting of applications. Managing large and complex projects or multiple components with smooth implementation and testing of application. Creating packages for product flow using existing services for functional use.' },
-            { alignItem: 'exp-right', desig: 'Testing', yrs: 'Apr 2017 - Jul 2018', prof_desc: 'Creating jenkins jobs for product CNl, written test set for WebMethods Service Development in Junits. Testing products in environment like Linux(susse,redhat)/ Mac/ Windows. Correcting existing QFT test suite. Excellence in worked with agile methodology.' },
+            { alignItem: 'exp-left', desig: 'Angular Developer', yrs: 'June 2017 - Nov 2018', prof_desc: 'Developing API for WebMethods Integration Platform so that users can dragAndDrop different services.It will keep tracking of tree like structure folder within packages.Used Angular 2-6, Html5, CSS3, Javascript.' },
+            /*    {alignItem: 'exp-right', desig: 'Spring Boot Developer', yrs: 'Oct 2017 - Oct 2018', prof_desc: 'Designing, developing, and managing complex rest full web services using Spring Boot, Core Java and MySQL.Worked on WebMethods Integration Platform to provide access to rest full web services.'},*/
+            { alignItem: 'exp-right', desig: 'WebMethods Developer', yrs: 'Aug 2017 - Oct 2018', prof_desc: 'Designing, Developing, Implementation and troubleshooting of applications. Managing large and complex projects or multiple components with smooth implementation and testing of application. Creating packages for product flow using existing services for functional use.' },
+            { alignItem: 'exp-left', desig: 'Testing', yrs: 'Apr 2017 - Jul 2018', prof_desc: 'Creating jenkins jobs for product CNl, written test set for WebMethods Service Development in Junits. Testing products in environment like Linux(susse,redhat)/ Mac/ Windows. Correcting existing QFT test suite. Excellence in worked with agile methodology.' },
         ];
     }
     TimelineComponent.prototype.ngOnInit = function () {
